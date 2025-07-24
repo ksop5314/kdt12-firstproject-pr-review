@@ -13,11 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function initHeaderToggle() {
     const toggleButton = document.querySelector('.toggle-button');
     const toggleList = document.querySelector('.toggle-list');
-    const wrap = document.querySelector('.header');
 
     toggleButton.addEventListener("click", () => {
         toggleButton.classList.toggle("active");
         toggleList.classList.toggle("active");
-        wrap.classList.toggle("sidebar-active");
     });
 }
