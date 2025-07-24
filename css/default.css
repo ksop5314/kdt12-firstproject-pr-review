@@ -2,11 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(34, 37, 49);
+    background-color: black;
     font-family: Arial, sans-serif;
-}
-
-body {
 }
 
 img {
@@ -31,21 +28,38 @@ ul, li, a{
 /*}*/
 
 /* 토글 */
-.wrap {
+.header {
+    width: 100%;
     padding: 1rem;
-    display: flex;
-    background-color: rgb(34, 37, 49);
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /*display: flex;*/
+    z-index: 999;
+    background-color: black;
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+}
+
+.logo-button {
+    position: absolute;
+    top: 10px;
+    left: 15px;
 }
 
 .toggle-button {
+    position: fixed;
+    display: none;
     height: 20px;
     width: 25px;
-    margin-right: auto;
-    position: relative;
+    left: 30px;
+    top: 25px;
 }
 
 .toggle-list {
-    background-color: rgb(34, 37, 49);
+    background-color: black;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -57,19 +71,24 @@ ul, li, a{
     width: 100%;
     max-width: 250px;
     top: 0;
-    left: -250px;
-    transition: .3s ease;
-    color: #dddddd;
+    left: 0;
+    transition: all .3s ease;
 }
 
-.toggle-list.active {
-    left: 0;
-}
+/*.toggle-list.active {*/
+/*    left: 0;*/
+/*}*/
 
 .toggle-list ul {
     list-style: none;
     padding: 0;
     margin: 80px 0 0 0;
+}
+
+.toggle-list a {
+    transition: background 0.2s;
+    text-decoration: none;
+    color: #dddddd;
 }
 
 .toggle-list li {
@@ -89,7 +108,7 @@ ul, li, a{
     transition: background 0.2s;
 }
 
-.toggle-list li:hover, .toggle-list li:hover i, li:hover span {
+.toggle-list li:hover, .toggle-list a li:hover, .toggle-list li:hover i,.toggle-list li:hover span {
     background-color: #aaaaaa;
 }
 
@@ -99,79 +118,74 @@ ul, li, a{
     margin: 8px 0;
 }
 
-.wrap > div > a {
-    position: absolute;
-    top: -6px;
-    left: 50px;
-}
+/*.toggle-button:hover {*/
+/*    cursor: pointer;*/
+/*}*/
 
-.toggle-button:hover {
-    cursor: pointer;
-}
+/*.toggle-button .menu-bar {*/
+/*    width: 100%;*/
+/*    height: 2px;*/
+/*    background-color: white;*/
+/*    border-radius: 2px;*/
+/*    position: absolute;*/
+/*    transition: .5s;*/
+/*}*/
 
-.toggle-button .menu-bar {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    border-radius: 2px;
-    position: absolute;
-    transition: .5s;
-}
+/*.toggle-button .menu-bar-top {*/
+/*    top: 0;*/
+/*}*/
 
-.toggle-button .menu-bar-top {
-    top: 0;
-}
+/*.toggle-button .menu-bar-middle {*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*}*/
 
-.toggle-button .menu-bar-middle {
-    top: 50%;
-    transform: translateY(-50%);
-}
+/*.toggle-button .menu-bar-bottom {*/
+/*    bottom: 0;*/
+/*}*/
 
-.toggle-button .menu-bar-bottom {
-    bottom: 0;
-}
+/*.toggle-button.active .menu-bar-top {*/
+/*    transform: rotate(45deg);*/
+/*    top: 50%;*/
+/*}*/
 
-.toggle-button.active .menu-bar-top {
-    transform: rotate(45deg);
-    top: 50%;
-}
+/*.toggle-button.active .menu-bar-middle {*/
+/*    transform: translate(-230px);*/
+/*    opacity: 0;*/
+/*    transition: all .1s ease-in;*/
+/*}*/
 
-.toggle-button.active .menu-bar-middle {
-    transform: translate(-230px);
-    opacity: 0;
-    transition: all .1s ease-in;
-}
-
-.toggle-button.active .menu-bar-bottom {
-    transform: rotate(-45deg);
-    top: 50%;
-}
+/*.toggle-button.active .menu-bar-bottom {*/
+/*    transform: rotate(-45deg);*/
+/*    top: 50%;*/
+/*}*/
 
 /* 검색창 */
-.container {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 999;
+
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.search-bar {
+.header .search-bar {
     width: 400px;
     height: 40px;
     border: 1px solid #5D5D5D;
     border-radius: 20px 0 0 20px;
-    position: absolute;
-    left: 400px;
+    /*position: absolute;*/
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /*left: 400px;*/
     top: 6px;
-    flex-grow: 1; /* 남는 공간 차지 */
 }
 
 .search-bar input {
     width: 85%;
     height: 30px;
     margin: 4px 0 0 20px;
-    background-color: rgb(34, 37, 49);
+    background-color: black;
     border: none;
     color: white;
     outline: none;
@@ -182,36 +196,33 @@ ul, li, a{
     height: 40px;
     border: 1px solid #5D5D5D;
     border-radius: 0 20px 20px 0;
+    padding: 5px 5px 5px 15px;
     background-color: #333333;
-    position: absolute;
+    /*position: absolute;*/
     /*left: 63%;*/
-    left: 799px;
+    /*left: 799px;*/
     top: 6px;
-    margin-left: -1px;
 }
 
 .search-button:hover {
     cursor: pointer;
 }
 
-.search-button  a  img {
-    position: absolute;
+.search-button  > a > img {
+    /*position: absolute;*/
     width: 30px;
     height: 30px;
-    left: 18px;
-    top: 5px;
     background-color: #333333;
 }
 
 /* 보이스 검색 버튼 */
 .search-voice {
-    position: absolute;
+    /*position: absolute;*/
     background-color: #333333;
     border: none;
     border-radius: 50%;
     padding: 8px 8px 8px 10px;
-    left: 880px;
-    top: 4px;
+    margin-left: 10px;
 }
 
 .search-voice a {
@@ -229,4 +240,186 @@ ul, li, a{
 
 .search-voice:hover, .search-voice:hover a, .search-voice:hover a i{
     background-color: #5D5D5D;
+}
+
+.alert-button {
+    position: absolute;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 8px 8px 10px;
+    right: 65px;
+}
+
+.alert-button:hover, .alert-button:hover a, .alert-button:hover a i {
+    background-color: #5D5D5D;
+}
+
+.alert-button a {
+    background-color: black;
+}
+
+.alert-button a i {
+    width: 30px;
+    height: 25px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px 0 0 6px;
+    background-color: black;
+}
+
+.user-profile {
+    position: absolute;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 8px 8px 8px;
+    right: 10px;
+}
+
+.user-profile a {
+    background-color: cornflowerblue;
+}
+
+.user-profile a i {
+    width: 30px;
+    height: 25px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 4px 0 0 6px;
+    background-color: cornflowerblue;
+}
+
+/* 검색창과 영상목록 사이에 컨텐츠 버튼 */
+
+.container-fluid {
+    margin-top: 65px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.content .btn-light {
+    font-size: 14px;
+    border: none;
+}
+
+.content .btn-secondary {
+    border: none;
+    font-size: 14px;
+    background-color: #333333;
+}
+
+.content {
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.fixed-height-btn {
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    padding: 0 16px;
+    white-space: nowrap;
+}
+
+/* 영상 목록 범위 */
+.row > div {
+    margin-bottom: 15px;
+}
+
+.video-array .row .col-8 .card a {
+    text-decoration: none;
+}
+
+.col-8 .card {
+    border: none;
+    background-color: black;
+}
+
+.card > iframe {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card-body .card-title {
+    color: white;
+}
+
+.card .card-body .card-text, .card-body p i {
+    color: #5D5D5D;
+}
+
+@media (max-width: 1480px) {
+
+    /*.wrap > div > a {*/
+    /*    position: absolute;*/
+    /*    top: -6px;*/
+    /*    left: 50px;*/
+    /*}*/
+
+    .logo-button > a {
+        position: absolute;
+        top: -6px;
+        left: 50px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .toggle-list {
+        left: -250px;
+    }
+
+    .toggle-list.active {
+        left: 0;
+    }
+
+    .toggle-list.active .video-array {
+        margin-left: 250px;
+    }
+
+    .toggle-button:hover {
+        cursor: pointer;
+    }
+
+    .toggle-button .menu-bar {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        border-radius: 2px;
+        position: absolute;
+        transition: .5s;
+    }
+
+    .toggle-button .menu-bar-top {
+        top: 0;
+    }
+
+    .toggle-button .menu-bar-middle {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .toggle-button .menu-bar-bottom {
+        bottom: 0;
+    }
+
+    .toggle-button.active .menu-bar-top {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+
+    .toggle-button.active .menu-bar-middle {
+        transform: translate(-230px);
+        opacity: 0;
+        transition: all .1s ease-in;
+    }
+
+    .toggle-button.active .menu-bar-bottom {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
 }
