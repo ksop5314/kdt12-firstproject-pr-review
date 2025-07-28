@@ -6,9 +6,10 @@
     font-family: Arial, sans-serif;
 }
 
+/* main 영상 */
 .main-video .card {
-    width: 800px;
-    height: 600px;
+    width: 50rem;
+    height: 100%;
 }
 
 iframe {
@@ -19,11 +20,13 @@ iframe {
 }
 
 .main-video {
+    margin-left: 20px;
     padding: 100px 0 100px 0;
     background-color: black;
     border: none;
 }
 
+/* 영상 밑 태그 */
 .youtube-logo > img {
     width: 40px;
     height: 40px;
@@ -51,12 +54,44 @@ iframe {
     background-color: black;
 }
 
+/* 가입, 구독 버튼 */
 .sub-btn {
     position: absolute;
     left: 130px;
     top: 5px;
 }
 
+.join-btn {
+    color: white;
+    background-color: #333333;
+}
+
+.join-btn:hover {
+    cursor: pointer;
+    background-color: #5D5D5D;
+}
+
+.subscribe-btn {
+    color: black;
+    background-color: white;
+}
+
+.subscribe-btn:hover {
+    cursor: pointer;
+    background-color: #aaaaaa;
+}
+
+.join-btn, .subscribe-btn {
+    font-size: 14px;
+    width: 60px;
+    border: none;
+    border-radius: 18px;
+    padding: 8px;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+
+/* 좋아요 싫어요 버튼 */
 .content-like-btn {
     position: absolute;
     margin-left: 435px;
@@ -72,6 +107,7 @@ iframe {
     background-color: #5D5D5D;
 }
 
+/* 좋아요 버튼과 싫어요 버튼 중간 막대기 */
 .divider {
     position: absolute;
     left: 495px;
@@ -97,26 +133,15 @@ iframe {
     background-color: #5D5D5D;
 }
 
-.join-btn {
+.like-btn, .dislike-btn {
+    font-size: 20px;
     color: white;
+    border: none;
+    padding: 8px 20px 8px 20px;
     background-color: #333333;
 }
 
-.join-btn:hover {
-    cursor: pointer;
-    background-color: #5D5D5D;
-}
-
-.subscribe-btn {
-    color: black;
-    background-color: white;
-}
-
-.subscribe-btn:hover {
-    cursor: pointer;
-    background-color: #aaaaaa;
-}
-
+/* 공유 버튼 */
 .content-share-btn {
     position: absolute;
     margin-left: 570px;
@@ -150,6 +175,7 @@ iframe {
     background-color: #5D5D5D;
 }
 
+/* 더보기 버튼 */
 .more-content-btn {
     position: absolute;
     margin-left: 680px;
@@ -171,22 +197,459 @@ iframe {
     background-color: #5D5D5D;
 }
 
-.like-btn, .dislike-btn {
-    font-size: 20px;
-    color: white;
+/* 설명란 */
+.description-container {
+    display: inline-flex;
+}
+
+.description-container .description-text{
+    width: 86%;
     border: none;
-    padding: 8px 20px 8px 20px;
+    border-radius: 6px;
+    margin: 30px 0 10px 0;
+    padding: 8px 12px 10px 12px;
+    max-height: 73px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.description-text.expanded {
+    cursor: auto;
+    max-height: 600px;
+}
+
+.description-text .advertising-inquiry {
+    padding: 1px 4px 2px 4px;
+    border: none;
+    border-radius: 8px;
     background-color: #333333;
 }
 
-.join-btn, .subscribe-btn {
-    font-size: 14px;
-    width: 60px;
-    border: none;
-    border-radius: 18px;
-    padding: 8px;
-    white-space: nowrap;
-    margin-left: 5px;
+.description-text .advertising-inquiry img {
+    width: 13px;
+    height: 10px;
 }
 
+.description-container .description-text,
+.description-container .description-text strong {
+    font-size: 14px;
+    color: white;
+    background-color: #1e1e1e;
+}
 
+.description-container .description-text a {
+    background-color: #1e1e1e;
+}
+
+.description-container .description-text p {
+    color: lightslategray;
+}
+
+.description-container .description-text h4, .description-container .description-text p {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+}
+
+.description-toggle-button {
+    color: #5D5D5D;
+    font-size: 15px;
+    margin: 80px 0 0 350px;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    position: absolute;
+    background-color: #1e1e1e;
+}
+
+.description-toggle-button.bottom-left {
+    color: #5D5D5D;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 16px;
+}
+
+#toggle-less {
+    display: none;
+}
+
+/* 설명란 안에 언급 인물 */
+.profile-list {
+    display: inline-flex;
+}
+
+.profile-list a p {
+    color: white;
+}
+
+.profile-list a img {
+    margin: 5px 15px 5px 0;
+    border: none;
+    border-radius: 8px;
+}
+
+/* 설명란 안에 스크립트 */
+.show-script {
+    width: 110px;
+    padding: 10px;
+    border: 1px solid #5D5D5D;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+}
+
+/* 댓글 창 */
+.reply-container {
+    /*border: 2px solid red;  !* 테두리를 red 로 설정하고 틀 확인하면서 작업중 *!*/
+    border: none;
+}
+
+.reply-title {
+    color: white;
+    display: flex;
+    margin: 15px 0 10px 0;
+}
+
+.reply-title h5 {
+    margin-right: 50px;
+}
+
+.reply-title a {
+    color: #C2C2C2;
+    text-decoration: none;
+}
+
+.sort-by-icon {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.sort-by-icon span {
+    display: block;
+    height: 1px;
+    background-color: #C2C2C2;
+    border-radius: 2px;
+    margin: 5px 0;
+}
+
+.sort-by-icon .line1 { width: 100%; }
+.sort-by-icon .line2 { width: 70%; }
+.sort-by-icon .line3 { width: 40%; }
+
+/* 댓글창 프로필 */
+.reply-text {
+    display: flex;
+}
+
+.reply-user-profile {
+    display: inline-flex;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 8px 8px 8px;
+    right: 10px;
+    margin: 15px 10px 30px 0;
+}
+
+.reply-user-profile a {
+    background-color: cornflowerblue;
+}
+
+.reply-user-profile a i {
+    width: 30px;
+    height: 25px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 4px 0 0 6px;
+    background-color: cornflowerblue;
+}
+
+.reply-input-box {
+    width: 100%;
+}
+
+.reply-input {
+    margin: 12px 0 0 10px;
+    width: 98%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #C2C2C2;
+    transition: border-color 0.3s;
+}
+
+.reply-input.active {
+    border-bottom: 2px solid #C2C2C2;
+    outline: none;
+    color: white;
+}
+
+.reply-input.active .reply-actions {
+    display: flex;
+}
+
+.reply-actions {
+    padding: 5px 0;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emoji-button {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.action-buttons {
+    align-items: center;
+}
+
+.cancel-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px 16px;
+    margin-right: 15px;
+}
+
+.cancel-button:hover {
+    background-color: #333;
+    font-size: 14px;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.submit-button {
+    background-color: #333;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 16px;
+    color: #aaa;
+}
+
+/* 댓글 창에 문자가 입력되어 있을 때 댓글달기 버튼 활성화 */
+.submit-button.enabled {
+    cursor: pointer;
+    background-color: deepskyblue;
+    color: black;
+}
+
+.submit-button.enabled:hover {
+    background-color: lightskyblue;
+}
+
+/* 댓글 리스트 */
+.reply-list-box {
+    /*border: 1px solid chartreuse;*/ /* Test 위한 테두리 설정 */
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* user1 */
+.reply-user-profile.user1 {
+    display: inline-flex;
+    background-color: darkorange;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 8px 8px 8px;
+    right: 10px;
+    margin: 0 10px 0 0;
+}
+
+.reply-user-profile.user1 a {
+    background-color: darkorange;
+}
+
+.reply-user-profile.user1 a i {
+    width: 30px;
+    height: 25px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 4px 0 0 6px;
+    background-color: darkorange;
+}
+
+/* user2 */
+.reply-user-profile.user2 {
+    display: inline-flex;
+    background-color: slateblue;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 8px 8px 8px;
+    right: 10px;
+    margin: 0 10px 0 0;
+}
+
+.reply-user-profile.user2 a {
+    background-color: slateblue;
+}
+
+.reply-user-profile.user2 a i {
+    width: 30px;
+    height: 25px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 4px 0 0 6px;
+    background-color: slateblue;
+}
+
+.each-reply {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.each-reply .each-user-name {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+}
+
+.each-reply .each-user-name .reply-date {
+    color: #5D5D5D;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.each-reply .each-reply-text {
+    color: white;
+    font-size: 14px;
+    padding-bottom: 0;
+}
+
+.reply-like-box {
+    width: 90%;
+    /*border: 1px solid dodgerblue;*/ /* Test 위한 테두리 설정 */
+    border: none;
+    margin-left: 75px;
+    display: flex;
+    gap: 5px;
+}
+
+.reply-like-cnt {
+    color: white;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.reply-dislike-btn-box {
+    margin-left: 10px;
+}
+
+.reply-like-btn, .reply-dislike-btn {
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.reply-btn-box {
+    margin-left: 6px;
+    margin-top: 3px;
+}
+
+.reply-btn-box .reply-btn {
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 18px;
+    margin: 0;
+    padding: 6px 10px 4px 10px;
+}
+
+.reply-btn-box .reply-btn:hover {
+    background-color: #5D5D5D;
+}
+
+.reply-like-btn:hover , .reply-dislike-btn:hover {
+    background-color: #5D5D5D;
+}
+
+/* 대댓글 창 */
+.more-reply-list {
+    margin-left: 75px;
+    padding: 6px 14px 6px 14px;
+    border: none;
+    border-radius: 20px;
+    display: none;
+}
+
+.more-reply-list a {
+    font-size: 15px;
+}
+
+.more-reply-list:hover, .more-reply-list:hover a {
+    background-color: cornflowerblue;
+}
+
+/* 댓글에 댓글달기 버튼 */
+.re-reply-user-profile {
+    display: inline-flex;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 8px 8px 8px;
+    right: 10px;
+    margin: 10px 10px 0 0;
+}
+
+.re-reply-user-profile a {
+    background-color: cornflowerblue;
+}
+
+.re-reply-user-profile a i {
+    width: 30px;
+    height: 25px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 4px 0 0 6px;
+    background-color: cornflowerblue;
+}
+
+.re-reply-input-box {
+    display: none;
+    flex-wrap: wrap;
+    /*border: 3px solid tomato;*/  /* Test 위한 테두리 설정 */
+    border: none;
+    margin-left: 75px;
+    width: 100%;
+}
+
+.re-reply-input {
+    margin: 12px 0 0 10px;
+    width: 90%;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #C2C2C2;
+    outline: none;
+    color: white;
+    transition: border-color 0.3s;
+}
+
+.re-reply-actions {
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+.re-reply-actions .re-emoji-button {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.re-action-buttons {
+    display: inline-block;
+    margin-left: 440px;
+}
