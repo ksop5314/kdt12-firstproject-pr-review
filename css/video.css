@@ -5,8 +5,8 @@
     background-color: black;
     font-family: Arial, sans-serif;
 }
-/* main 영상 */
 
+/* main 영상 */
 .main-video .card {
     width: 50rem;
     height: 100%;
@@ -107,6 +107,7 @@ iframe {
     background-color: #5D5D5D;
 }
 
+/* 좋아요 버튼과 싫어요 버튼 중간 막대기 */
 .divider {
     position: absolute;
     left: 495px;
@@ -301,12 +302,14 @@ iframe {
 
 /* 댓글 창 */
 .reply-container {
-    border: 2px solid red;  /* 테두리를 red 로 설정하고 틀 확인하면서 작업중 */
+    /*border: 2px solid red;  !* 테두리를 red 로 설정하고 틀 확인하면서 작업중 *!*/
+    border: none;
 }
 
 .reply-title {
     color: white;
     display: flex;
+    margin: 15px 0 10px 0;
 }
 
 .reply-title h5 {
@@ -366,7 +369,7 @@ iframe {
     background-color: cornflowerblue;
 }
 
-.test1 {
+.reply-input-box {
     width: 100%;
 }
 
@@ -442,4 +445,211 @@ iframe {
 
 .submit-button.enabled:hover {
     background-color: lightskyblue;
+}
+
+/* 댓글 리스트 */
+.reply-list-box {
+    /*border: 1px solid chartreuse;*/ /* Test 위한 테두리 설정 */
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* user1 */
+.reply-user-profile.user1 {
+    display: inline-flex;
+    background-color: darkorange;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 8px 8px 8px;
+    right: 10px;
+    margin: 0 10px 0 0;
+}
+
+.reply-user-profile.user1 a {
+    background-color: darkorange;
+}
+
+.reply-user-profile.user1 a i {
+    width: 30px;
+    height: 25px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 4px 0 0 6px;
+    background-color: darkorange;
+}
+
+/* user2 */
+.reply-user-profile.user2 {
+    display: inline-flex;
+    background-color: slateblue;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 8px 8px 8px;
+    right: 10px;
+    margin: 0 10px 0 0;
+}
+
+.reply-user-profile.user2 a {
+    background-color: slateblue;
+}
+
+.reply-user-profile.user2 a i {
+    width: 30px;
+    height: 25px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 4px 0 0 6px;
+    background-color: slateblue;
+}
+
+.each-reply {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.each-reply .each-user-name {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+}
+
+.each-reply .each-user-name .reply-date {
+    color: #5D5D5D;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.each-reply .each-reply-text {
+    color: white;
+    font-size: 14px;
+    padding-bottom: 0;
+}
+
+.reply-like-box {
+    width: 90%;
+    /*border: 1px solid dodgerblue;*/ /* Test 위한 테두리 설정 */
+    border: none;
+    margin-left: 75px;
+    display: flex;
+    gap: 5px;
+}
+
+.reply-like-cnt {
+    color: white;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.reply-dislike-btn-box {
+    margin-left: 10px;
+}
+
+.reply-like-btn, .reply-dislike-btn {
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.reply-btn-box {
+    margin-left: 6px;
+    margin-top: 3px;
+}
+
+.reply-btn-box .reply-btn {
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 18px;
+    margin: 0;
+    padding: 6px 10px 4px 10px;
+}
+
+.reply-btn-box .reply-btn:hover {
+    background-color: #5D5D5D;
+}
+
+.reply-like-btn:hover , .reply-dislike-btn:hover {
+    background-color: #5D5D5D;
+}
+
+/* 대댓글 창 */
+.more-reply-list {
+    margin-left: 75px;
+    padding: 6px 14px 6px 14px;
+    border: none;
+    border-radius: 20px;
+    display: none;
+}
+
+.more-reply-list a {
+    font-size: 15px;
+}
+
+.more-reply-list:hover, .more-reply-list:hover a {
+    background-color: cornflowerblue;
+}
+
+/* 댓글에 댓글달기 버튼 */
+.re-reply-user-profile {
+    display: inline-flex;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 8px 8px 8px;
+    right: 10px;
+    margin: 10px 10px 0 0;
+}
+
+.re-reply-user-profile a {
+    background-color: cornflowerblue;
+}
+
+.re-reply-user-profile a i {
+    width: 30px;
+    height: 25px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 4px 0 0 6px;
+    background-color: cornflowerblue;
+}
+
+.re-reply-input-box {
+    display: none;
+    flex-wrap: wrap;
+    /*border: 3px solid tomato;*/  /* Test 위한 테두리 설정 */
+    border: none;
+    margin-left: 75px;
+    width: 100%;
+}
+
+.re-reply-input {
+    margin: 12px 0 0 10px;
+    width: 90%;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #C2C2C2;
+    outline: none;
+    color: white;
+    transition: border-color 0.3s;
+}
+
+.re-reply-actions {
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+.re-reply-actions .re-emoji-button {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.re-action-buttons {
+    display: inline-block;
+    margin-left: 440px;
 }

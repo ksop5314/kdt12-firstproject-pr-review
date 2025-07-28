@@ -121,13 +121,13 @@
                                 정렬기준
                             </a>
                         </div>
-                        <div class="reply-text">
+                        <div class="reply-text" id="replyText">
                             <div class="reply-user-profile">
                                 <a href="#">
                                     <i class="fa-solid fa-user"></i>
                                 </a>
                             </div>
-                            <div class="test1">
+                            <div class="reply-input-box">
                                 <input type="text" class="reply-input" id="replyInput" placeholder="댓글 추가...">
                                 <div class="reply-actions" id="replyActions">
                                     <i class="bi bi-emoji-smile emoji-button"></i>
@@ -138,7 +138,96 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="reply-list-box">
+                            <div class="reply-user-profile user1">
+                                <a href="#">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                            </div>
+                            <div class="each-reply">
+                                <div class="each-user-name">
+                                    @testUser1 <span class="reply-date">4일 전</span>
+                                </div>
+                                <span class="each-reply-text">
+                                    이런 감독의 말레이시아팀 상대로 3대3 비긴 클버지 클라스는 대체...
+                                </span>
+                            </div>
+                            <div class="reply-like-box">
+                                <div class="reply-like-btn-box">
+                                    <i id="replyLikeBtn" class="fa-regular fa-thumbs-up icon-button reply-like-btn"></i>
+                                </div>
+                                <span id="replyLikeCnt" class="reply-like-cnt">281</span>
+                                <div class="reply-dislike-btn-box">
+                                    <i id="replyDislikeBtn" class="fa-regular fa-thumbs-down icon-button reply-dislike-btn"></i>
+                                </div>
+                                <div class="reply-btn-box">
+                                    <button class="reply-btn" id="replyBtn">답글</button>
+                                </div>
+                            </div>
+                            <div class="re-reply-input-box" id="reReplyInputBox">
+                                <div class="re-reply-user-profile">
+                                    <a href="#">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                </div>
+                                <input type="text" class="re-reply-input" id="reReplyInput">
+                                <div class="re-reply-actions" id="reReplyActions">
+                                    <i class="bi bi-emoji-smile re-emoji-button"></i>
+                                    <div class="re-action-buttons">
+                                        <button class="cancel-button" id="reCancelBtn">취소</button>
+                                        <button class="submit-button" id="reSubmitBtn" disabled>댓글</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-reply-list">
+                                <a href="">∨ 답글 1개</a>
+                            </div>
+                        </div>
+                        <div class="reply-list-box">
+                            <div class="reply-user-profile user2">
+                                <a href="#">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                            </div>
+                            <div class="each-reply">
+                                <div class="each-user-name">
+                                    @testUser1 <span class="reply-date">4일 전</span>
+                                </div>
+                                <span class="each-reply-text">
+                                    작년 전북과 올해 울산을 보면 진짜 감독이 팀 망치는건  한순간이다.
+                                </span>
+                            </div>
+                            <div class="reply-like-box">
+                                <div class="reply-like-btn-box">
+                                    <i id="replyLikeBtn2" class="fa-regular fa-thumbs-up icon-button reply-like-btn"></i>
+                                </div>
+                                <span id="replyLikeCnt2" class="reply-like-cnt">58</span>
+                                <div class="reply-dislike-btn-box">
+                                    <i id="replyDislikeBtn2" class="fa-regular fa-thumbs-down icon-button reply-dislike-btn"></i>
+                                </div>
+                                <div class="reply-btn-box">
+                                    <button class="reply-btn" id="replyBtn2">답글</button>
+                                </div>
+                            </div>
+                            <div class="re-reply-input-box" id="reReplyInputBox2">
+                                <div class="re-reply-user-profile">
+                                    <a href="#">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                </div>
+                                <input type="text" class="re-reply-input" id="reReplyInput2">
+                                <div class="re-reply-actions" id="reReplyActions2">
+                                    <i class="bi bi-emoji-smile re-emoji-button"></i>
+                                    <div class="re-action-buttons">
+                                        <button class="cancel-button" id="reCancelBtn2">취소</button>
+                                        <button class="submit-button" id="reSubmitBtn2" disabled>댓글</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-reply-list">
+                                <a href="">∨ 답글 1개</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
