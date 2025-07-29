@@ -63,6 +63,7 @@ ul, li, a{
 }
 
 .toggle-list {
+    background-color: #121212;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -76,7 +77,6 @@ ul, li, a{
     top: 0;
     left: 0;
     transition: all .3s ease;
-    background-color: #121212;
 }
 
 /*.toggle-list.active {*/
@@ -296,12 +296,11 @@ ul, li, a{
 
 /* 검색창과 영상목록 사이에 컨텐츠 버튼 */
 
-.container-fluid {
-    margin-top: 65px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
+.container-fluid.sub-content {
+    margin-top: 60px;
+    display: inline-block;
+    text-align: center;
+    background-color: #121212;
 }
 
 .content .btn-light {
@@ -344,7 +343,7 @@ ul, li, a{
 
 .col-8 .card {
     border: none;
-    background-color: black;
+    background-color: #121212;
 }
 
 .card > iframe {
@@ -352,11 +351,31 @@ ul, li, a{
     overflow: hidden;
 }
 
-.card-body .card-title {
+.video-info-line {
+    margin-top: 15px;
+}
+
+.card-text {
+    margin-left: 45px;
+}
+
+.video-info-line .card-title {
     color: white;
 }
 
-.card .card-body .card-text, .card-body p i {
+.channel-logo-with-title {
+    display: flex;
+}
+
+.channel-logo-with-title img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 50%;
+}
+
+.card .video-info-line .card-text, .video-info-line p i {
     color: #5D5D5D;
 }
 
