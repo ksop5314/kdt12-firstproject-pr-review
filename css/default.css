@@ -6,6 +6,10 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #121212;
+}
+
 img {
     width: 10rem;
 }
@@ -59,7 +63,6 @@ ul, li, a{
 }
 
 .toggle-list {
-    background-color: #121212;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -73,6 +76,7 @@ ul, li, a{
     top: 0;
     left: 0;
     transition: all .3s ease;
+    background-color: #121212;
 }
 
 /*.toggle-list.active {*/
@@ -326,6 +330,11 @@ ul, li, a{
 /* 영상 목록 범위 */
 .row > div {
     margin-bottom: 15px;
+}
+
+.video-array-container {
+    background-color: #121212;
+    padding: 20px;
 }
 
 .video-array .row .col-8 .card a {

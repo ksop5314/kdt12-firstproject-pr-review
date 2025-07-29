@@ -6,6 +6,10 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #121212;
+}
+
 /* main 영상 */
 .main-video .main-video-block {
     width: 50rem;
