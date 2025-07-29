@@ -14,6 +14,7 @@ replyInput.addEventListener('focus',  () => {
 
 cancelBtn.addEventListener("click", () => {
    replyInput.classList.remove("active");
+   submitBtn.classList.remove("enabled");
    replyInput.value = "";
    replyActions.style.display = "none";
    replyText.style.marginBottom = "0";
@@ -31,6 +32,7 @@ replyInput.addEventListener("input", () => {
 
 
 // 댓글에 댓글 달기 버튼
+// user1 댓글에 댓글 달기 버튼
 const reReplyBtn = document.getElementById("replyBtn");
 const reReplyInputBox = document.getElementById("reReplyInputBox");
 const reReplyCancelBtn = document.getElementById("reCancelBtn");
@@ -39,10 +41,12 @@ const reReplySubmitBtn = document.getElementById("reSubmitBtn");
 
 reReplyBtn.addEventListener("click", () => {
     reReplyInputBox.style.display = "flex";
+    reReplySubmitBtn.classList.remove("enabled");
 });
 
 reReplyCancelBtn.addEventListener("click", () => {
     reReplyInputBox.style.display = "none";
+    reReplyInput.value = "";
 });
 
 reReplyInput.addEventListener("input", () => {
@@ -62,10 +66,12 @@ const reReplySubmitBtn2 = document.getElementById("reSubmitBtn2");
 
 reReplyBtn2.addEventListener("click", () => {
     reReplyInputBox2.style.display = "flex";
+    reReplySubmitBtn2.classList.remove("enabled");
 });
 
 reReplyCancelBtn2.addEventListener("click", () => {
     reReplyInputBox2.style.display = "none";
+    reReplyInput2.value = "";
 });
 
 reReplyInput2.addEventListener("input", () => {
@@ -76,3 +82,27 @@ reReplyInput2.addEventListener("input", () => {
     }
 });
 
+// user3 댓글에 댓글 달기 버튼
+const reReplyBtn3 = document.getElementById("replyBtn3");
+const reReplyInputBox3 = document.getElementById("reReplyInputBox3");
+const reReplyCancelBtn3 = document.getElementById("reCancelBtn3");
+const reReplyInput3 = document.getElementById("reReplyInput3");
+const reReplySubmitBtn3 = document.getElementById("reSubmitBtn3");
+
+reReplyBtn3.addEventListener("click", () => {
+    reReplyInputBox3.style.display = "flex";
+    reReplySubmitBtn3.classList.remove("enabled");
+});
+
+reReplyCancelBtn3.addEventListener("click", () => {
+    reReplyInputBox3.style.display = "none";
+    reReplyInput3.value = "";
+});
+
+reReplyInput3.addEventListener("input", () => {
+    if (reReplyInput3.value.trim().length > 0) {
+        reReplySubmitBtn3.classList.add("enabled");
+    } else {
+        reReplySubmitBtn3.classList.remove("enabled");
+    }
+});

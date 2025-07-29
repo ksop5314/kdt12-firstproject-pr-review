@@ -27,6 +27,7 @@ dislikeBtn.addEventListener("click", () => {
 });
 
 // 댓글 좋아요 싫어요
+// user1
 const replyLikeBtn = document.getElementById("replyLikeBtn");
 const replyDislikeBtn = document.getElementById("replyDislikeBtn");
 const replyLikeCnt = document.getElementById("replyLikeCnt");
@@ -142,6 +143,66 @@ replyDislikeBtn2.addEventListener("click", () => {
                 replyLikeCnt2.innerText = "";
             } else {
                 replyLikeCnt2.innerText = cnt.toString();
+            }
+        }
+    }
+});
+
+// user3 좋아요 싫어요
+const replyLikeBtn3 = document.getElementById("replyLikeBtn3");
+const replyDislikeBtn3 = document.getElementById("replyDislikeBtn3");
+const replyLikeCnt3 = document.getElementById("replyLikeCnt3");
+
+replyLikeBtn3.addEventListener("click", () => {
+    const isReplyLiked = replyLikeBtn3.classList.toggle("liked");
+    replyLikeBtn3.classList.toggle("fa-regular", !isReplyLiked);
+    replyLikeBtn3.classList.toggle("fa-solid", isReplyLiked);
+
+    let test = replyLikeCnt3.innerText;
+    let cnt = parseInt(test === "" ? 0 : test);
+
+    if (isReplyLiked) {
+        replyDislikeBtn3.classList.remove("disliked", "fa-solid");
+        replyDislikeBtn3.classList.add("fa-regular");
+
+        cnt += 1;
+        replyLikeCnt3.innerText = cnt.toString();
+        console.log(cnt);
+    }
+
+    if (!isReplyLiked) {
+        cnt -= 1;
+        if (cnt === 0 ){
+            replyLikeCnt3.innerText = "";
+            console.log(cnt);
+        } else {
+            replyLikeCnt3.innerText = cnt.toString();
+        }
+    }
+});
+
+replyDislikeBtn3.addEventListener("click", () => {
+    const isReplyDisliked = replyDislikeBtn3.classList.toggle("disliked");
+    replyDislikeBtn3.classList.toggle("fa-regular", !isReplyDisliked);
+    replyDislikeBtn3.classList.toggle("fa-solid", isReplyDisliked);
+
+    let test = replyLikeCnt3.innerText;
+    let cnt = parseInt(test === "" ? 0 : test);
+
+    if (isReplyDisliked) {
+        const isReplyLiked = replyLikeBtn3.classList.toggle("liked");
+        replyLikeBtn3.classList.remove("liked", "fa-solid");
+        replyLikeBtn3.classList.add("fa-regular");
+
+        console.log(isReplyLiked);
+        console.log(cnt);
+
+        if (!isReplyLiked) {
+            cnt -= 1;
+            if (cnt === 0) {
+                replyLikeCnt3.innerText = "";
+            } else {
+                replyLikeCnt3.innerText = cnt.toString();
             }
         }
     }
