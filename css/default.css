@@ -2,8 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #121212;
     font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
 }
 
 img {
@@ -37,7 +41,7 @@ ul, li, a{
     justify-content: center;
     /*display: flex;*/
     z-index: 999;
-    background-color: black;
+    background-color: #121212;
     transition: all 0.3s ease;
     top: 0;
     left: 0;
@@ -59,7 +63,6 @@ ul, li, a{
 }
 
 .toggle-list {
-    background-color: black;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -73,6 +76,7 @@ ul, li, a{
     top: 0;
     left: 0;
     transition: all .3s ease;
+    background-color: #121212;
 }
 
 /*.toggle-list.active {*/
@@ -185,7 +189,7 @@ ul, li, a{
     width: 85%;
     height: 30px;
     margin: 4px 0 0 20px;
-    background-color: black;
+    background-color: #121212;
     border: none;
     color: white;
     outline: none;
@@ -244,7 +248,7 @@ ul, li, a{
 
 .alert-button {
     position: absolute;
-    background-color: black;
+    background-color: #121212;
     border: none;
     border-radius: 50%;
     padding: 10px 8px 8px 10px;
@@ -256,7 +260,7 @@ ul, li, a{
 }
 
 .alert-button a {
-    background-color: black;
+    background-color: #121212;
 }
 
 .alert-button a i {
@@ -265,7 +269,7 @@ ul, li, a{
     color: white;
     font-size: 1.3rem;
     padding: 10px 0 0 6px;
-    background-color: black;
+    background-color: #121212;
 }
 
 .user-profile {
@@ -327,6 +331,11 @@ ul, li, a{
 /* 영상 목록 범위 */
 .row > div {
     margin-bottom: 15px;
+}
+
+.video-array-container {
+    background-color: #121212;
+    padding: 20px;
 }
 
 .video-array .row .col-8 .card a {
