@@ -14,7 +14,8 @@
     <header class="header" id="header"></header>
     <div class="container main-video">
         <div class="main-video-block">
-            <iframe src="https://www.youtube.com/embed/ZPQlKwFjKyI" title="와 미친.. 강등권과 3점차.. 김판곤 끝난 것 같다 [울산vs대전]"
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/ZPQlKwFjKyI" title="와 미친.. 강등권과 3점차.. 김판곤 끝난 것 같다 [울산vs대전]"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -30,17 +31,18 @@
                     <img src="/first_project/img/youtube-logo-1.png" alt="달수네라이브-logo">
                 </div>
                 <div class="card-text">
-                    <span style="color: white;">달수네라이브</span>
+                    <span>달수네라이브</span>
                     <p>구독자 73.9만명</p>
                     <div class="sub-btn">
                         <button class="join-btn">가입</button>
                         <button class="subscribe-btn">구독</button>
                     </div>
-                    <div class="content-like-btn">
+                    <div id="contentLikeBtn" class="content-like-btn">
                         <i id="likeBtn" class="fa-regular fa-thumbs-up icon-button like-btn"></i>
+                        <div id="likeCnt" class="like-cnt">99</div>
                     </div>
                     <div class="divider"></div>
-                    <div class="content-dislike-btn">
+                    <div id="contentDislikeBtn" class="content-dislike-btn">
                         <i id="dislikeBtn" class="fa-regular fa-thumbs-down icon-button dislike-btn"></i>
                     </div>
                     <div class="content-share-btn">

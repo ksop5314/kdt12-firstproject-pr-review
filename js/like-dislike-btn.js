@@ -1,8 +1,15 @@
 
+const titleLikeBtn = document.getElementById("contentLikeBtn");
 const likeBtn = document.getElementById("likeBtn");
+const titleDislikeBtn = document.getElementById("contentDislikeBtn");
 const dislikeBtn = document.getElementById("dislikeBtn");
+const likeCnt = document.getElementById("likeCnt");
 
-likeBtn.addEventListener("click", () => {
+titleLikeBtn.addEventListener("click", () => {
+
+    let test = likeCnt.innerText;
+    let cnt = parseInt(test === "" ? 0 : test);
+
     const isLiked = likeBtn.classList.toggle("liked");
     likeBtn.classList.toggle("fa-regular", !isLiked);
     likeBtn.classList.toggle("fa-solid", isLiked);
@@ -11,18 +18,46 @@ likeBtn.addEventListener("click", () => {
     if (isLiked) {
         dislikeBtn.classList.remove("disliked", "fa-solid");
         dislikeBtn.classList.add("fa-regular");
+
+        cnt += 1;
+        likeCnt.innerText = cnt.toString();
+        console.log(cnt);
+    }
+
+    if (!isLiked) {
+        cnt -= 1;
+        if (cnt === 0) {
+            likeCnt.innerText = "";
+            console.log(cnt);
+        } else {
+            likeCnt.innerText = cnt.toString();
+        }
     }
 });
 
-dislikeBtn.addEventListener("click", () => {
+titleDislikeBtn.addEventListener("click", () => {
+
+    let test = likeCnt.innerText;
+    let cnt = parseInt(test === "" ? 0 : test);
+
     const isDisliked = dislikeBtn.classList.toggle("disliked");
     dislikeBtn.classList.toggle("fa-regular", !isDisliked);
     dislikeBtn.classList.toggle("fa-solid", isDisliked);
 
     // 좋아요와 싫어요 중 하나만 선택 가능
     if (isDisliked) {
+        const isLiked = likeBtn.classList.toggle("liked");
         likeBtn.classList.remove("liked", "fa-solid");
         likeBtn.classList.add("fa-regular");
+
+        if (!isLiked) {
+            cnt -= 1;
+            if (cnt === 0) {
+                likeCnt.innerText = "";
+            } else {
+                likeCnt.innerText = cnt.toString();
+            }
+        }
     }
 });
 

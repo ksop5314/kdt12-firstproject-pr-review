@@ -252,7 +252,7 @@ ul, li, a{
     border: none;
     border-radius: 50%;
     padding: 10px 8px 8px 10px;
-    right: 65px;
+    right: 75px;
 }
 
 .alert-button:hover, .alert-button:hover a, .alert-button:hover a i {
@@ -277,8 +277,9 @@ ul, li, a{
     background-color: cornflowerblue;
     border: none;
     border-radius: 50%;
-    padding: 8px 8px 8px 8px;
-    right: 10px;
+    margin-top: 5px;
+    padding: 4px 10px 4px 10px;
+    right: 30px;
 }
 
 .user-profile a {
@@ -286,12 +287,120 @@ ul, li, a{
 }
 
 .user-profile a i {
-    width: 30px;
-    height: 25px;
+    color: white;
+    font-size: 1.0rem;
+    background-color: cornflowerblue;
+}
+
+/* 프로필 토글 바 */
+.user-menu-bar {
+    display: none;
+    position: absolute;
+    padding-bottom: 10px;
+    width: 300px;
+    right: 15px;
+    top: 60px;
+    z-index: 1000;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.user-menu-bar hr {
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    margin: 10px 0;
+}
+
+.user-profile-content hr {
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    margin-left: -20px;
+}
+
+.user-menu-bar,
+.user-info,
+.user-info div,
+.user-info div a,
+.user-menu,
+.user-menu-profile,
+.user-menu-bar hr,
+.user-menu-bar p,
+.user-menu-bar p a,
+.profile-bar-section,
+.user-profile-content a li strong,
+.user-profile-content a li .profile-bar-item {
+    background-color: #2c2c2c;
+}
+
+/* 프로필 토글 바 => user info 구역 */
+.user-menu {
+    display: flex;
+    margin: 10px 0 0 20px;
+}
+
+.user-profile.info {
+    position: static;
     color: white;
     font-size: 1.3rem;
-    padding: 4px 0 0 6px;
+    padding: 10px 12px 10px 12px;
     background-color: cornflowerblue;
+}
+
+.user-menu .user-info {
+    flex: 1;
+    margin: 6px 0 0 10px;
+    color: white;
+}
+
+.user-info div .user-channel {
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* 프로필 토글 바 => content list 구역 */
+.profile-bar-section {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.user-profile-content {
+    list-style: none;
+    padding: 0 0 0 20px;
+    background-color: #2c2c2c;
+}
+
+.user-profile-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.profile-bar-logo {
+    width: 25px;
+    height: 25px;
+    background-color: #2c2c2c;
+}
+
+.profile-bar-logo > i {
+    padding-top: 6px;
+    background-color: #2c2c2c;
+    font-size: 20px;
+}
+
+.profile-bar-logo > strong {
+    font-size: 23px;
+}
+
+.profile-bar-item {
+    flex: 1;
+    margin: 4px 0 0 20px;
+}
+
+.user-menu-bar p  a strong {
+    margin-right: 20px;
+    color: white;
+    font-size: 25px;
+    background-color: #2c2c2c;
 }
 
 /* 검색창과 영상목록 사이에 컨텐츠 버튼 */

@@ -48,9 +48,12 @@ iframe {
 
 .card-text {
     position: absolute;
-    display: inline-flex;
     margin-left: 13px;
     margin-top: 2px;
+}
+
+.card-text > span {
+    color: white;
 }
 
 .card-text > p {
@@ -70,7 +73,7 @@ iframe {
     color: white;
 }
 
-.card-title, .card-text{
+.video-page-title, .card-text{
     border: none;
     border-radius: 16px;
     width: 700px;
@@ -117,7 +120,9 @@ iframe {
 /* 좋아요 싫어요 버튼 */
 .content-like-btn {
     position: absolute;
-    margin-left: 435px;
+    display: flex;
+    width: 80px;
+    margin-left: 415px;
     top: 5px;
     border: none;
     border-radius: 20px 0 0 20px;
@@ -125,9 +130,23 @@ iframe {
     background-color: #333333;
 }
 
-.like-btn:hover {
+.content-like-btn:hover, .content-like-btn:hover .like-btn, .content-like-btn:hover .like-cnt{
     cursor: pointer;
     background-color: #5D5D5D;
+}
+
+.like-cnt {
+    margin: 6px 0;
+    color: white;
+    background-color: #333333;
+}
+
+.like-btn {
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 8px 10px 8px 12px;
+    background-color: #333333;
 }
 
 /* 좋아요 버튼과 싫어요 버튼 중간 막대기 */
@@ -156,7 +175,7 @@ iframe {
     background-color: #5D5D5D;
 }
 
-.like-btn, .dislike-btn {
+.dislike-btn {
     font-size: 20px;
     color: white;
     border: none;
