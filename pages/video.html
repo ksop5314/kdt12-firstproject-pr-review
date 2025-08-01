@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/first_project/css/default.css">
+    <link rel="stylesheet" href="/first_project/css/video.css">
+</head>
+<body>
+  <header class="header" id="header"></header>
+  <div class="main-video">
+    <div class="main-video-block">
+      <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      <h5 class="video-page-title"><strong id="videoTitle"></strong></h5>
+      <div class="video-page-body">
+        <div class="youtube-logo">
+          <img id="channelLogo" alt="채널 로고">
+        </div>
+        <div class="channel-info">
+          <span id="channelName"></span>
+          <p id="subscriberCount"></p>
+        </div>
+        <div class="sub-btn">
+          <button class="join-btn">가입</button>
+          <button class="subscribe-btn">구독</button>
+        </div>
+        <div id="contentLikeBtn" class="content-like-btn">
+          <i id="likeBtn" class="fa-regular fa-thumbs-up icon-button like-btn"></i>
+          <div id="likeCnt" class="like-cnt">99</div>
+        </div>
+        <div class="divider"></div>
+        <div id="contentDislikeBtn" class="content-dislike-btn">
+          <i id="dislikeBtn" class="fa-regular fa-thumbs-down icon-button dislike-btn"></i>
+        </div>
+        <div class="content-share-btn">
+          <span class="share-btn"><i class="fa-regular fa-share-from-square"></i>공유</span>
+        </div>
+        <div class="more-content-btn">
+          <i class="fa-solid fa-ellipsis more-btn"></i>
+        </div>
+      </div>
+      <div class="description-container">
+        <div id="desc" class="description-text">
+          조회수 <strong id="videoView" class="view-and-date"></strong>회 <strong id="videoDate" class="view-and-date"></strong>.
+          <!--     Tag List     -->
+          <div id="toggleMore" class="description-toggle-button">
+            <strong>ㆍㆍㆍ</strong> 더보기 창 클릭 <strong>ㆍㆍㆍ</strong>
+          </div>
+          <span id="tagTitle" class="tag-title"></span>
+
+          <br><br>
+
+          <pre id="textHead" class="text-head"></pre>
+          <div id="joinMembership" class="join-membership">
+            <img id="ytLogoSm" class="yt-logo-sm">
+            <div id="membershipTag" class="membership-tag"></div>
+          </div>
+
+          <br><br>
+
+          <div id="advertisingInquiry" class="advertising-inquiry"></div>
+
+          <br>
+
+          <!--     보통 언급 인물 구역     -->
+          <h4 id="subTitle1" class="sub-title-1"></h4>
+          <p id="stPeople" class="sub-title-1 people"></p>
+          <h4 id="subTitle3" class="sub-title-1"></h4>
+
+          <div id="peopleList" class="people-list"></div>
+          <div id="contentList" class="content-list"></div>
+
+          <!--     보통 스크립트 구역     -->
+          <h4 id="subTitle2" class="sub-title-2"></h4>
+
+
+          <p id="stScriptText" class="sub-title-2 st-script-text"></p>
+
+
+          <div id="stScriptBtn" class="sub-title-2 st-script-btn"></div>
+
+          <div id="toggleLess" class="description-toggle-button bottom-left">간략히</div>
+        </div>
+      </div>
+      <div class="reply-container">
+        <div class="reply-title-frame">
+          <h5>
+            <strong id="replyTitle" class="reply-title"></strong>
+          </h5>
+          <a href="#">
+            <div class="sort-by-icon">
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+            </div>
+            정렬기준
+          </a>
+        </div>
+      </div>
+      <div class="reply-text" id="replyText">
+        <div class="reply-user-profile">
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </div>
+        <div class="reply-input-box">
+          <input type="text" class="reply-input" id="replyInput" placeholder="댓글 추가...">
+          <div class="reply-actions" id="replyActions">
+            <i class="bi bi-emoji-smile emoji-button"></i>
+            <div class="action-buttons">
+              <button class="cancel-button" id="cancelBtn">취소</button>
+              <button class="submit-button" id="submitBtn" disabled>댓글</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reply-list-box">
+        <div class="reply-user-profile user1">
+          <a href="#">
+            <img id="testUser1" class="test-user">
+          </a>
+        </div>
+        <div class="each-reply">
+          <div id="replyTestUser1" class="each-user-name"></div>
+          <span id="replyDate1" class="reply-date"></span>
+          <div id="eachReplyText1" class="each-reply-text"></div>
+        </div>
+        <div class="reply-like-box">
+          <div class="reply-like-btn-box">
+            <i id="replyLikeBtn1" class="fa-regular fa-thumbs-up icon-button reply-like-btn"></i>
+          </div>
+          <span id="replyLikeCnt1" class="reply-like-cnt"></span>
+          <div class="reply-dislike-btn-box">
+            <i id="replyDislikeBtn1" class="fa-regular fa-thumbs-down icon-button reply-dislike-btn"></i>
+          </div>
+          <div class="reply-btn-box">
+            <button class="reply-btn" id="replyBtn1">답글</button>
+          </div>
+        </div>
+        <div class="re-reply-input-box" id="reReplyInputBox1">
+          <div class="re-reply-user-profile">
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </div>
+          <input type="text" class="re-reply-input" id="reReplyInput1">
+          <div class="re-reply-actions" id="reReplyActions1">
+            <i class="bi bi-emoji-smile re-emoji-button"></i>
+            <div class="re-action-buttons">
+              <button class="cancel-button" id="reCancelBtn1">취소</button>
+              <button class="submit-button" id="reSubmitBtn1" disabled>댓글</button>
+            </div>
+          </div>
+        </div>
+        <div class="more-reply-list">
+          <a href="">∨ 답글 1개</a>
+        </div>
+      </div>
+      <div class="reply-list-box">
+        <div class="reply-user-profile user2">
+          <a href="#">
+            <img id="testUser2" class="test-user">
+          </a>
+        </div>
+        <div class="each-reply">
+          <div id="replyTestUser2" class="each-user-name"></div>
+          <span id="replyDate2" class="reply-date"></span>
+          <div id="eachReplyText2" class="each-reply-text"></div>
+        </div>
+        <div class="reply-like-box">
+          <div class="reply-like-btn-box">
+            <i id="replyLikeBtn2" class="fa-regular fa-thumbs-up icon-button reply-like-btn"></i>
+          </div>
+          <span id="replyLikeCnt2" class="reply-like-cnt"></span>
+          <div class="reply-dislike-btn-box">
+            <i id="replyDislikeBtn2" class="fa-regular fa-thumbs-down icon-button reply-dislike-btn"></i>
+          </div>
+          <div class="reply-btn-box">
+            <button class="reply-btn" id="replyBtn2">답글</button>
+          </div>
+        </div>
+        <div class="re-reply-input-box" id="reReplyInputBox2">
+          <div class="re-reply-user-profile">
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </div>
+          <input type="text" class="re-reply-input" id="reReplyInput2">
+          <div class="re-reply-actions" id="reReplyActions2">
+            <i class="bi bi-emoji-smile re-emoji-button"></i>
+            <div class="re-action-buttons">
+              <button class="cancel-button" id="reCancelBtn2">취소</button>
+              <button class="submit-button" id="reSubmitBtn2" disabled>댓글</button>
+            </div>
+          </div>
+        </div>
+        <div class="more-reply-list">
+          <a href="">∨ 답글 1개</a>
+        </div>
+      </div>
+    </div>
+    <div class="right-video-sidebar" id="rightVideoSidebar">
+      <div class="category-bar">
+        <div class="category-scroll">
+          <button class="category-button active">모두</button>
+          <button class="category-button"><strong>MBN News</strong> 제공</button>
+          <button class="category-button">정치 뉴스</button>
+          <button class="category-button">게임</button>
+          <button class="category-button">음악</button>
+          <button class="category-button">뉴스</button>
+          <button class="category-button">관련 콘텐츠</button>
+        </div>
+        <div class="category-fade-out">
+          <span class="arrow"> > </span>
+        </div>
+      </div>
+
+      <!--동적으로 영상 List 나열-->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/c1eefe57c4.js" crossorigin="anonymous"></script>
+  <script src="/first_project/js/default.js"></script>
+  <script src="/first_project/js/like-dislike-btn.js"></script>
+  <script src="/first_project/js/description-box.js"></script>
+  <script src="/first_project/js/reply-box.js"></script>
+  <script src="/first_project/js/right-sidebar-video.js"></script>
+  <script src="/first_project/js/video-page.js"></script>
+
+</body>
+</html>

@@ -63,50 +63,50 @@ titleDislikeBtn.addEventListener("click", () => {
 
 // 댓글 좋아요 싫어요
 // user1
-const replyLikeBtn = document.getElementById("replyLikeBtn");
-const replyDislikeBtn = document.getElementById("replyDislikeBtn");
-const replyLikeCnt = document.getElementById("replyLikeCnt");
+const replyLikeBtn1 = document.getElementById("replyLikeBtn1");
+const replyDislikeBtn1 = document.getElementById("replyDislikeBtn1");
+const replyLikeCnt1 = document.getElementById("replyLikeCnt1");
 
-replyLikeBtn.addEventListener("click", () => {
-    const isReplyLiked = replyLikeBtn.classList.toggle("liked");
-    replyLikeBtn.classList.toggle("fa-regular", !isReplyLiked);
-    replyLikeBtn.classList.toggle("fa-solid", isReplyLiked);
+replyLikeBtn1.addEventListener("click", () => {
+    const isReplyLiked = replyLikeBtn1.classList.toggle("liked");
+    replyLikeBtn1.classList.toggle("fa-regular", !isReplyLiked);
+    replyLikeBtn1.classList.toggle("fa-solid", isReplyLiked);
 
-    let test = replyLikeCnt.innerText;
+    let test = replyLikeCnt1.innerText;
     let cnt = parseInt(test === "" ? 0 : test);
 
     if (isReplyLiked) {
-        replyDislikeBtn.classList.remove("disliked", "fa-solid");
-        replyDislikeBtn.classList.add("fa-regular");
+        replyDislikeBtn1.classList.remove("disliked", "fa-solid");
+        replyDislikeBtn1.classList.add("fa-regular");
 
         cnt += 1;
-        replyLikeCnt.innerText = cnt.toString();
+        replyLikeCnt1.innerText = cnt.toString();
         console.log(cnt);
     }
 
     if (!isReplyLiked) {
         cnt -= 1;
         if (cnt === 0 ){
-            replyLikeCnt.innerText = "";
+            replyLikeCnt1.innerText = "";
             console.log(cnt);
         } else {
-            replyLikeCnt.innerText = cnt.toString();
+            replyLikeCnt1.innerText = cnt.toString();
         }
     }
 });
 
-replyDislikeBtn.addEventListener("click", () => {
-    const isReplyDisliked = replyDislikeBtn.classList.toggle("disliked");
-    replyDislikeBtn.classList.toggle("fa-regular", !isReplyDisliked);
-    replyDislikeBtn.classList.toggle("fa-solid", isReplyDisliked);
+replyDislikeBtn1.addEventListener("click", () => {
+    const isReplyDisliked = replyDislikeBtn1.classList.toggle("disliked");
+    replyDislikeBtn1.classList.toggle("fa-regular", !isReplyDisliked);
+    replyDislikeBtn1.classList.toggle("fa-solid", isReplyDisliked);
 
-    let test = replyLikeCnt.innerText;
+    let test = replyLikeCnt1.innerText;
     let cnt = parseInt(test === "" ? 0 : test);
 
     if (isReplyDisliked) {
-        const isReplyLiked = replyLikeBtn.classList.toggle("liked");
-        replyLikeBtn.classList.remove("liked", "fa-solid");
-        replyLikeBtn.classList.add("fa-regular");
+        const isReplyLiked = replyLikeBtn1.classList.toggle("liked");
+        replyLikeBtn1.classList.remove("liked", "fa-solid");
+        replyLikeBtn1.classList.add("fa-regular");
 
         console.log(isReplyLiked);
         console.log(cnt);
@@ -114,9 +114,9 @@ replyDislikeBtn.addEventListener("click", () => {
         if (!isReplyLiked) {
             cnt -= 1;
             if (cnt === 0) {
-                replyLikeCnt.innerText = "";
+                replyLikeCnt1.innerText = "";
             } else {
-                replyLikeCnt.innerText = cnt.toString();
+                replyLikeCnt1.innerText = cnt.toString();
             }
         }
     }

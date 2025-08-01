@@ -33,27 +33,27 @@ replyInput.addEventListener("input", () => {
 
 // 댓글에 댓글 달기 버튼
 // user1 댓글에 댓글 달기 버튼
-const reReplyBtn = document.getElementById("replyBtn");
-const reReplyInputBox = document.getElementById("reReplyInputBox");
-const reReplyCancelBtn = document.getElementById("reCancelBtn");
-const reReplyInput = document.getElementById("reReplyInput");
-const reReplySubmitBtn = document.getElementById("reSubmitBtn");
+const reReplyBtn1 = document.getElementById("replyBtn1");
+const reReplyInputBox1 = document.getElementById("reReplyInputBox1");
+const reReplyCancelBtn1 = document.getElementById("reCancelBtn1");
+const reReplyInput1 = document.getElementById("reReplyInput1");
+const reReplySubmitBtn1 = document.getElementById("reSubmitBtn1");
 
-reReplyBtn.addEventListener("click", () => {
-    reReplyInputBox.style.display = "flex";
-    reReplySubmitBtn.classList.remove("enabled");
+reReplyBtn1.addEventListener("click", () => {
+    reReplyInputBox1.style.display = "flex";
+    reReplySubmitBtn1.classList.remove("enabled");
 });
 
-reReplyCancelBtn.addEventListener("click", () => {
-    reReplyInputBox.style.display = "none";
-    reReplyInput.value = "";
+reReplyCancelBtn1.addEventListener("click", () => {
+    reReplyInputBox1.style.display = "none";
+    reReplyInput1.value = "";
 });
 
-reReplyInput.addEventListener("input", () => {
-    if (reReplyInput.value.trim().length > 0) {
-        reReplySubmitBtn.classList.add("enabled");
+reReplyInput1.addEventListener("input", () => {
+    if (reReplyInput1.value.trim().length > 0) {
+        reReplySubmitBtn1.classList.add("enabled");
     } else {
-        reReplySubmitBtn.classList.remove("enabled");
+        reReplySubmitBtn1.classList.remove("enabled");
     }
 });
 

@@ -1,7 +1,16 @@
 
 // header.html > index.html 로 불러오기
 document.addEventListener("DOMContentLoaded", function () {
-   fetch("/first_project/pages/header.html")
+    const videoCards = document.querySelectorAll(".video-card");
+
+    videoCards.forEach(card => {
+       card.addEventListener("click", () => {
+         const videoId = card.dataset.videoId;
+         window.location.href = `video.html?videoId=${videoId}`;
+       });
+    });
+
+    fetch("/first_project/pages/header.html")
        .then(res => res.text())
        .then(data => {
           document.getElementById("header").innerHTML = data;
@@ -43,3 +52,4 @@ function initProfileToggle() {
         }
     });
 }
+

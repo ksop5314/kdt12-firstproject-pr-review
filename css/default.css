@@ -19,18 +19,6 @@ ul, li, a{
     text-decoration: none;
 }
 
-/*#header {*/
-/*    position: fixed;*/
-/*}*/
-
-/*.wrap {*/
-/*    width: 100%;*/
-/*    position: fixed;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    background-color: black;*/
-/*}*/
-
 /* 토글 */
 .header {
     width: 100%;
@@ -121,48 +109,6 @@ ul, li, a{
     border-top: 1px solid #aaaaaa;
     margin: 8px 0;
 }
-
-/*.toggle-button:hover {*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.toggle-button .menu-bar {*/
-/*    width: 100%;*/
-/*    height: 2px;*/
-/*    background-color: white;*/
-/*    border-radius: 2px;*/
-/*    position: absolute;*/
-/*    transition: .5s;*/
-/*}*/
-
-/*.toggle-button .menu-bar-top {*/
-/*    top: 0;*/
-/*}*/
-
-/*.toggle-button .menu-bar-middle {*/
-/*    top: 50%;*/
-/*    transform: translateY(-50%);*/
-/*}*/
-
-/*.toggle-button .menu-bar-bottom {*/
-/*    bottom: 0;*/
-/*}*/
-
-/*.toggle-button.active .menu-bar-top {*/
-/*    transform: rotate(45deg);*/
-/*    top: 50%;*/
-/*}*/
-
-/*.toggle-button.active .menu-bar-middle {*/
-/*    transform: translate(-230px);*/
-/*    opacity: 0;*/
-/*    transition: all .1s ease-in;*/
-/*}*/
-
-/*.toggle-button.active .menu-bar-bottom {*/
-/*    transform: rotate(-45deg);*/
-/*    top: 50%;*/
-/*}*/
 
 /* 검색창 */
 
@@ -296,11 +242,10 @@ ul, li, a{
 .user-menu-bar {
     display: none;
     position: absolute;
-    padding-bottom: 10px;
     width: 300px;
     right: 15px;
     top: 60px;
-    z-index: 1000;
+    z-index: 999;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -361,17 +306,31 @@ ul, li, a{
 /* 프로필 토글 바 => content list 구역 */
 .profile-bar-section {
     display: flex;
-    margin-bottom: 15px;
+}
+
+.profile-bar-section:hover,
+.profile-bar-section:hover .profile-bar-logo,
+.profile-bar-section:hover .profile-bar-logo strong,
+.profile-bar-section:hover .profile-bar-logo i,
+.profile-bar-section:hover .profile-bar-item {
+    background-color: #aaaaaa;
 }
 
 .user-profile-content {
     list-style: none;
-    padding: 0 0 0 20px;
+    padding: 0;
     background-color: #2c2c2c;
 }
 
 .user-profile-content a {
     text-decoration: none;
+    color: white;
+}
+
+.user-profile-content a .profile-bar-section {
+    text-decoration: none;
+    text-indent: 10px;
+    padding: 15px 0;
     color: white;
 }
 
@@ -388,6 +347,7 @@ ul, li, a{
 }
 
 .profile-bar-logo > strong {
+    margin-left: 8px;
     font-size: 23px;
 }
 
@@ -405,7 +365,7 @@ ul, li, a{
 
 /* 검색창과 영상목록 사이에 컨텐츠 버튼 */
 
-.container-fluid.sub-content {
+.container-fluid {
     margin-top: 60px;
     display: inline-block;
     text-align: center;
@@ -449,7 +409,6 @@ ul, li, a{
 .video-array .row .col-8 .card a {
     text-decoration: none;
 }
-
 .col-8 .card {
     border: none;
     background-color: #121212;
@@ -460,23 +419,25 @@ ul, li, a{
     overflow: hidden;
 }
 
-.video-info-line {
-    margin-top: 15px;
-}
-
 .card-text {
-    margin-left: 45px;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1;
+    vertical-align: top;
 }
 
-.video-info-line .card-title {
+.channel-logo-with-title .card-title {
     color: white;
+    margin: 0;
+    font-size: 15px;
 }
 
-.channel-logo-with-title {
+.video-info-line {
     display: flex;
+    margin: 10px 0;
 }
 
-.channel-logo-with-title img {
+.video-info-line img {
     width: 35px;
     height: 35px;
     margin-right: 10px;
@@ -484,17 +445,19 @@ ul, li, a{
     border-radius: 50%;
 }
 
+.channel-logo-with-title {
+    flex: 1;
+}
+
 .card .video-info-line .card-text, .video-info-line p i {
     color: #5D5D5D;
 }
 
-@media (max-width: 1480px) {
+.video-card {
+    cursor: pointer;
+}
 
-    /*.wrap > div > a {*/
-    /*    position: absolute;*/
-    /*    top: -6px;*/
-    /*    left: 50px;*/
-    /*}*/
+@media (max-width: 1480px) {
 
     .logo-button > a {
         position: absolute;

@@ -34,6 +34,27 @@ const videos = [
         views: "16만회",
         time: "3년 전",
         thumbnail: "https://i.ytimg.com/vi/bJfbPWEMj_c/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDrd2qdeJcP_LbzMiY_4Ere9thKzg"
+    },
+    {
+        title: "후회하더라도 피하는 것이 좋다",
+        channel: "정서불안 김햄찌",
+        views: "47만회",
+        time: "2일 전",
+        thumbnail: "https://i.ytimg.com/vi/5HGVrMUQCRo/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCg_-IFj-DgS3ZmsAHZjQEPqjxXqg",
+    },
+    {
+        title: "위로가 필요한 힘들고 어려운 시간을 지나고 있다면 - 김창옥 [정기강연 ep.339]",
+        channel: "김창옥TV",
+        views: "45만회",
+        time: "2주 전",
+        thumbnail: "https://i.ytimg.com/vi/whixTynwRTo/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCl1bBIpE3xRsXgGBH5dp0WcjiOoQ",
+    },
+    {
+        title: "여객기에 바짝 다가온 폭격기...충돌 직전 회피 / SBS",
+        channel: "SBS 뉴스",
+        views: "27만회",
+        time: "10일 전",
+        thumbnail: "https://i.ytimg.com/vi/v3E5c_D-Ee4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDK9lExLupm_3BTHWmT9KyXkwaELg"
     }
 ];
 

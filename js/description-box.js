@@ -7,17 +7,20 @@
 // });
 
 const desc = document.getElementById('desc');
-const moreBtn = document.getElementById('toggle-more');
-const lessBtn = document.getElementById('toggle-less');
+const moreBtn = document.getElementById('toggleMore');
+const lessBtn = document.getElementById('toggleLess');
 
 moreBtn.addEventListener('click', () => {
     desc.classList.add('expanded');
     moreBtn.style.display = 'none';
-    lessBtn.style.display = 'inline-block';
+    desc.style.maxHeight = "100%";
+    lessBtn.style.display = "block";
 });
 
 lessBtn.addEventListener('click', () => {
     desc.classList.remove('expanded');
     lessBtn.style.display = 'none';
-    moreBtn.style.display = 'inline-block';
+    desc.classList.remove('expanded');
+    desc.style.maxHeight = "75px";
+    moreBtn.style.display = "block";
 });
