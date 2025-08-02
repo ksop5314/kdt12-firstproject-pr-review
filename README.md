@@ -18,4 +18,3 @@
 
 - HTML5, CSS3
 - JavaScript (Vanilla JS)
-- (서버가 있다면 추가: JSON 서버, Express 등)
