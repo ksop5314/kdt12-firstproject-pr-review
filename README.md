@@ -21,5 +21,20 @@
 
 ## 📁 디렉토리 구조
 
-<img width="689" height="675" alt="image" src="https://github.com/user-attachments/assets/92b42b7e-dec3-48b2-91fc-fe8257cdb21d" />
+first_project/<br>
+├── css/<br>
+│ ├── default.css # 공통 스타일<br>
+│ └── video.css # video 페이지 전용 스타일<br>
+├── js/<br>
+│ ├── default.js # 공통 JS (공용 로직)<br>
+│ ├── description.js # 영상 설명 출력<br>
+│ ├── like-dislike-btn.js # 좋아요 / 싫어요 버튼 처리<br>
+│ ├── main-page.js # index.html(메인 페이지)용 JS<br>
+│ ├── reply-box.js # 댓글 입력 및 출력 처리<br>
+│ ├── right-sidebar-video.js # 추천 영상 사이드바 처리<br>
+│ └── video-page.js # video.html 전용 로직<br>
+├── pages/<br>
+│ └── header.html # 공통 header<br>
+├── index.html # 메인 페이지 (영상 리스트)<br>
+├── video.html # 영상 상세 페이지<br>
 
