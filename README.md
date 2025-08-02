@@ -18,3 +18,25 @@
 
 - HTML5, CSS3
 - JavaScript (Vanilla JS)
+
+## 📁 디렉토리 구조
+
+first_project/
+├── css
+│   └── default.css
+│   └── video.css
+├── index.html
+├── video.html
+├── js
+│   └── default.js
+│   └── description.js
+│   └── like-dislike-btn.js
+│   └── main-page.js
+│   └── reply-box.js
+│   └── right-sidebar-video.js
+│   └── video-page.js
+├── /pages
+│   ├── header.html
+│   ├── index.html
+│   ├── video.html
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
