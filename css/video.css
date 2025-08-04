@@ -546,28 +546,37 @@ iframe {
 /* 댓글창 프로필 */
 .reply-text {
     display: flex;
+    margin-bottom: 40px;
+}
+
+.reply-user-profile {
+    margin: 0;
+    padding: 0;
+    height: 45px;
 }
 
 .reply-user-profile a {
     background-color: cornflowerblue;
     display: inline-flex;
     border: none;
-    border-radius: 50%;
     padding: 8px 8px 12px 8px;
+    border-radius: 50%;
     right: 10px;
-    margin: 15px 10px 40px 0;
 }
 
 .reply-user-profile a i {
     width: 30px;
     height: 25px;
     color: white;
+    border-radius: 50%;
     font-size: 1.3rem;
-    padding: 4px 0 0 6px;
+    text-align: center;
+    padding-top: 3px;
     background-color: cornflowerblue;
 }
 
 .reply-input-box {
+    margin-left: 10px;
     width: 100%;
 }
 
@@ -651,13 +660,12 @@ iframe {
     border: none;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 
 /* user1 */
 .reply-user-profile.user1 a {
     right: 10px;
-    margin: 5px 0 0 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -672,7 +680,7 @@ iframe {
 /* user2 */
 .reply-user-profile.user2 a {
     right: 10px;
-    margin: 5px 0 0 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -706,6 +714,7 @@ iframe {
 .each-reply {
     width: 90%;
     margin-left: 20px;
+    height: 100%;
 }
 
 .each-reply .each-user-name {
@@ -724,7 +733,10 @@ iframe {
 .each-reply .each-reply-text {
     color: white;
     font-size: 14px;
+    margin-bottom: 0;
     padding-bottom: 0;
+    font-weight: lighter;
+    font-family: Arial, sans-serif;
 }
 
 .reply-like-box {
@@ -779,20 +791,44 @@ iframe {
 
 /* 대댓글 창 */
 .more-reply-list {
+    margin-top: 10px;
     margin-left: 75px;
-    padding: 6px 14px 6px 14px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 20px;
-    display: none;
+    width: 100%;
 }
 
 .more-reply-list a {
     font-size: 15px;
 }
 
-.more-reply-list:hover, .more-reply-list:hover a {
-    background-color: cornflowerblue;
+.more-reply-list-1 {
+    margin-top: 10px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
 }
+
+.more-reply-list-1 a {
+    font-size: 15px;
+}
+
+.more-reply-list-2 {
+    margin-top: 10px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.more-reply-list-2 a {
+    font-size: 15px;
+}
+
 
 /* 댓글에 댓글달기 버튼 */
 .re-reply-user-profile {

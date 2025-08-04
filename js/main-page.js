@@ -6,7 +6,7 @@ videoListData = {
             title: "와 미친.. 강등권과 3점차.. 김판곤 끝난 것 같다 [울산vs대전]",
             channel: "달수네라이브",
             channelLogo: "/first_project/img/youtube-logo-1.png",
-            view: "4만회 ㆍ ",
+            view: "조회수 4만회 ㆍ ",
             date: "10시간 전"
         },
         {
@@ -14,7 +14,7 @@ videoListData = {
             title: "[EN] 행운의 77회는 핑계고 | EP.77",
             channel: "뜬뜬 DdeunDdeun",
             channelLogo: "/first_project/img/youtube-logo-2.jpg",
-            view: "264만회 ㆍ ",
+            view: "조회수 264만회 ㆍ ",
             date: "2개월 전"
         },
         {
@@ -22,7 +22,7 @@ videoListData = {
             title: "[2025 K리그1] 22R 전북 vs 강원 풀 하이라이트",
             channel: "쿠팡플레이 스포츠",
             channelLogo: "/first_project/img/youtube-logo-3.jpg",
-            view: "3만회 ㆍ ",
+            view: "조회수 3만회 ㆍ ",
             date: "7시간 전"
         },
         {
@@ -30,7 +30,7 @@ videoListData = {
             title: "난 월 1000 벌어 너는?",
             channel: "웃기시네",
             channelLogo: "/first_project/img/youtube-logo-4.jpg",
-            view: "1.4만회 ㆍ ",
+            view: "조회수 1.4만회 ㆍ ",
             date: "1시간 전"
         },
         {
@@ -38,7 +38,7 @@ videoListData = {
             title: "스프링 제대로 공부했는지 5분안에 확인하는 방법",
             channel: "백기선",
             channelLogo: "/first_project/img/youtube-logo-5.jpg",
-            view: "16만회 ㆍ ",
+            view: "조회수 16만회 ㆍ ",
             date: "3년 전"
         },
         {
@@ -46,7 +46,7 @@ videoListData = {
             title: "후회하더라도 피하는 것이 좋다",
             channel: "정서불안 김햄찌",
             channelLogo: "/first_project/img/youtube-logo-6.jpg",
-            view: "47만회 ㆍ ",
+            view: "조회수 47만회 ㆍ ",
             date: "2일 전"
         },
         {
@@ -54,7 +54,7 @@ videoListData = {
             title: "위로가 필요한 힘들고 어려운 시간을 지나고 있다면 - 김창옥 [정기강연 ep.339]",
             channel: "김창옥TV",
             channelLogo: "/first_project/img/youtube-logo-7.jpg",
-            view: "45만회 ㆍ ",
+            view: "조회수 45만회 ㆍ ",
             date: "2주 전"
         },
         {
@@ -62,7 +62,7 @@ videoListData = {
             title: "여객기에 바짝 다가온 폭격기...충돌 직전 회피 / SBS",
             channel: "SBS 뉴스",
             channelLogo: "/first_project/img/youtube-logo-8.jpg",
-            view: "27만회 ㆍ ",
+            view: "조회수 27만회 ㆍ ",
             date: "10일 전"
         }
     ]

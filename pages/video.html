@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>test</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -86,123 +85,129 @@
           <div id="toggleLess" class="description-toggle-button bottom-left">간략히</div>
         </div>
       </div>
-      <div class="reply-container">
-        <div class="reply-title-frame">
-          <h5>
-            <strong id="replyTitle" class="reply-title"></strong>
-          </h5>
-          <a href="#">
-            <div class="sort-by-icon">
-              <span class="line1"></span>
-              <span class="line2"></span>
-              <span class="line3"></span>
-            </div>
-            정렬기준
-          </a>
-        </div>
-      </div>
-      <div class="reply-text" id="replyText">
-        <div class="reply-user-profile">
-          <a href="#">
-            <i class="fa-solid fa-user"></i>
-          </a>
-        </div>
-        <div class="reply-input-box">
-          <input type="text" class="reply-input" id="replyInput" placeholder="댓글 추가...">
-          <div class="reply-actions" id="replyActions">
-            <i class="bi bi-emoji-smile emoji-button"></i>
-            <div class="action-buttons">
-              <button class="cancel-button" id="cancelBtn">취소</button>
-              <button class="submit-button" id="submitBtn" disabled>댓글</button>
-            </div>
+
+      <!--   댓글 구역   -->
+      <div class="reply-frame" id="replyFrame">
+        <div class="reply-container">
+          <div class="reply-title-frame">
+            <h5>
+              <strong id="replyTitle" class="reply-title"></strong>
+            </h5>
+            <a href="#">
+              <div class="sort-by-icon">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+              </div>
+              정렬기준
+            </a>
           </div>
         </div>
-      </div>
-      <div class="reply-list-box">
-        <div class="reply-user-profile user1">
-          <a href="#">
-            <img id="testUser1" class="test-user">
-          </a>
-        </div>
-        <div class="each-reply">
-          <div id="replyTestUser1" class="each-user-name"></div>
-          <span id="replyDate1" class="reply-date"></span>
-          <div id="eachReplyText1" class="each-reply-text"></div>
-        </div>
-        <div class="reply-like-box">
-          <div class="reply-like-btn-box">
-            <i id="replyLikeBtn1" class="fa-regular fa-thumbs-up icon-button reply-like-btn"></i>
-          </div>
-          <span id="replyLikeCnt1" class="reply-like-cnt"></span>
-          <div class="reply-dislike-btn-box">
-            <i id="replyDislikeBtn1" class="fa-regular fa-thumbs-down icon-button reply-dislike-btn"></i>
-          </div>
-          <div class="reply-btn-box">
-            <button class="reply-btn" id="replyBtn1">답글</button>
-          </div>
-        </div>
-        <div class="re-reply-input-box" id="reReplyInputBox1">
-          <div class="re-reply-user-profile">
+        <div class="reply-text" id="replyText">
+          <div class="reply-user-profile">
             <a href="#">
               <i class="fa-solid fa-user"></i>
             </a>
           </div>
-          <input type="text" class="re-reply-input" id="reReplyInput1">
-          <div class="re-reply-actions" id="reReplyActions1">
-            <i class="bi bi-emoji-smile re-emoji-button"></i>
-            <div class="re-action-buttons">
-              <button class="cancel-button" id="reCancelBtn1">취소</button>
-              <button class="submit-button" id="reSubmitBtn1" disabled>댓글</button>
+          <div class="reply-input-box">
+            <input type="text" class="reply-input" id="replyInput" placeholder="댓글 추가...">
+            <div class="reply-actions" id="replyActions">
+              <i class="bi bi-emoji-smile emoji-button"></i>
+              <div class="action-buttons">
+                <button class="cancel-button" id="cancelBtn">취소</button>
+                <button class="submit-button" id="submitBtn">댓글</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="more-reply-list">
-          <a href="">∨ 답글 1개</a>
-        </div>
-      </div>
-      <div class="reply-list-box">
-        <div class="reply-user-profile user2">
-          <a href="#">
-            <img id="testUser2" class="test-user">
-          </a>
-        </div>
-        <div class="each-reply">
-          <div id="replyTestUser2" class="each-user-name"></div>
-          <span id="replyDate2" class="reply-date"></span>
-          <div id="eachReplyText2" class="each-reply-text"></div>
-        </div>
-        <div class="reply-like-box">
-          <div class="reply-like-btn-box">
-            <i id="replyLikeBtn2" class="fa-regular fa-thumbs-up icon-button reply-like-btn"></i>
-          </div>
-          <span id="replyLikeCnt2" class="reply-like-cnt"></span>
-          <div class="reply-dislike-btn-box">
-            <i id="replyDislikeBtn2" class="fa-regular fa-thumbs-down icon-button reply-dislike-btn"></i>
-          </div>
-          <div class="reply-btn-box">
-            <button class="reply-btn" id="replyBtn2">답글</button>
-          </div>
-        </div>
-        <div class="re-reply-input-box" id="reReplyInputBox2">
-          <div class="re-reply-user-profile">
+        <div class="reply-list-box">
+          <div class="reply-user-profile user1">
             <a href="#">
-              <i class="fa-solid fa-user"></i>
+              <img id="testUser1" class="test-user">
             </a>
           </div>
-          <input type="text" class="re-reply-input" id="reReplyInput2">
-          <div class="re-reply-actions" id="reReplyActions2">
-            <i class="bi bi-emoji-smile re-emoji-button"></i>
-            <div class="re-action-buttons">
-              <button class="cancel-button" id="reCancelBtn2">취소</button>
-              <button class="submit-button" id="reSubmitBtn2" disabled>댓글</button>
+          <div class="each-reply">
+            <div id="replyTestUser1" class="each-user-name"></div>
+            <span id="replyDate1" class="reply-date"></span>
+            <pre id="eachReplyText1" class="each-reply-text"></pre>
+          </div>
+          <div class="reply-like-box">
+            <div class="reply-like-btn-box">
+              <i id="replyLikeBtn1" class="fa-regular fa-thumbs-up icon-button reply-like-btn"></i>
+            </div>
+            <span id="replyLikeCnt1" class="reply-like-cnt"></span>
+            <div class="reply-dislike-btn-box">
+              <i id="replyDislikeBtn1" class="fa-regular fa-thumbs-down icon-button reply-dislike-btn"></i>
+            </div>
+            <div class="reply-btn-box">
+              <button class="reply-btn" id="replyBtn1">답글</button>
             </div>
           </div>
+          <div class="re-reply-input-box" id="reReplyInputBox1">
+            <div class="re-reply-user-profile">
+              <a href="#">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </div>
+            <input type="text" class="re-reply-input" id="reReplyInput1">
+            <div class="re-reply-actions" id="reReplyActions1">
+              <i class="bi bi-emoji-smile re-emoji-button"></i>
+              <div class="re-action-buttons">
+                <button class="cancel-button" id="reCancelBtn1">취소</button>
+                <button class="submit-button" id="reSubmitBtn1">댓글</button>
+              </div>
+            </div>
+          </div>
+          <div class="more-reply-list-1">
+
+          </div>
         </div>
-        <div class="more-reply-list">
-          <a href="">∨ 답글 1개</a>
+        <div class="reply-list-box">
+          <div class="reply-user-profile user2">
+            <a href="#">
+              <img id="testUser2" class="test-user">
+            </a>
+          </div>
+          <div class="each-reply">
+            <div id="replyTestUser2" class="each-user-name"></div>
+            <span id="replyDate2" class="reply-date"></span>
+            <pre id="eachReplyText2" class="each-reply-text"></pre>
+          </div>
+          <div class="reply-like-box">
+            <div class="reply-like-btn-box">
+              <i id="replyLikeBtn2" class="fa-regular fa-thumbs-up icon-button reply-like-btn"></i>
+            </div>
+            <span id="replyLikeCnt2" class="reply-like-cnt"></span>
+            <div class="reply-dislike-btn-box">
+              <i id="replyDislikeBtn2" class="fa-regular fa-thumbs-down icon-button reply-dislike-btn"></i>
+            </div>
+            <div class="reply-btn-box">
+              <button class="reply-btn" id="replyBtn2">답글</button>
+            </div>
+          </div>
+          <div class="re-reply-input-box" id="reReplyInputBox2">
+            <div class="re-reply-user-profile">
+              <a href="#">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </div>
+            <input type="text" class="re-reply-input" id="reReplyInput2">
+            <div class="re-reply-actions" id="reReplyActions2">
+              <i class="bi bi-emoji-smile re-emoji-button"></i>
+              <div class="re-action-buttons">
+                <button class="cancel-button" id="reCancelBtn2">취소</button>
+                <button class="submit-button" id="reSubmitBtn2">댓글</button>
+              </div>
+            </div>
+          </div>
+          <div class="more-reply-list-2">
+
+          </div>
         </div>
       </div>
     </div>
+
+    <!--  오른쪽 추천영상 리스트 구역  -->
     <div class="right-video-sidebar" id="rightVideoSidebar">
       <div class="category-bar">
         <div class="category-scroll">
