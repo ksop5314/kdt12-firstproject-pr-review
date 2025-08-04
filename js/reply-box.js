@@ -108,14 +108,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 cnt += 1;
                 replyLikeCnt.innerText = cnt.toString();
-                console.log(cnt);
             }
 
             if (!isReplyLiked) {
                 cnt -= 1;
                 if (cnt === 0 ){
                     replyLikeCnt.innerText = "";
-                    console.log(cnt);
                 } else {
                     replyLikeCnt.innerText = cnt.toString();
                 }
@@ -134,9 +132,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 const isReplyLiked = replyLikeBtn.classList.toggle("liked");
                 replyLikeBtn.classList.remove("liked", "fa-solid");
                 replyLikeBtn.classList.add("fa-regular");
-
-                console.log(isReplyLiked);
-                console.log(cnt);
 
                 if (!isReplyLiked) {
                     cnt -= 1;
@@ -158,9 +153,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const reReplyBox = document.querySelector(".more-reply-list");
 
-        console.log(reReplyInput);
-        console.log(reReplySubmitBtn);
-
         reReplyBtn.addEventListener("click", () => {
             reReplyInputBox.style.display = "flex";
             reReplySubmitBtn.classList.remove("enabled");
@@ -180,8 +172,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         reReplySubmitBtn.addEventListener("click", (e) => {
-            //e.preventDefault();
-            console.log("댓글에 댓글달기");
             const reReplyText = reReplyInput.value.trim();
             if (!reReplyText) return;
 
@@ -348,31 +338,6 @@ document.addEventListener("DOMContentLoaded", () => {
         reReplySubmitBtn2.classList.remove("enabled");
         reReplyInputBox2.style.display = "none";
     });
-
-    //user3 댓글에 댓글 달기 버튼
-    // const reReplyBtn3 = document.getElementById("replyBtn3");
-    // const reReplyInputBox3 = document.getElementById("reReplyInputBox3");
-    // const reReplyCancelBtn3 = document.getElementById("reCancelBtn3");
-    // const reReplyInput3 = document.getElementById("reReplyInput3");
-    // const reReplySubmitBtn3 = document.getElementById("reSubmitBtn3");
-    //
-    // reReplyBtn3.addEventListener("click", () => {
-    //     reReplyInputBox3.style.display = "flex";
-    //     reReplySubmitBtn3.classList.remove("enabled");
-    // });
-    //
-    // reReplyCancelBtn3.addEventListener("click", () => {
-    //     reReplyInputBox3.style.display = "none";
-    //     reReplyInput3.value = "";
-    // });
-    //
-    // reReplyInput3.addEventListener("input", () => {
-    //     if (reReplyInput3.value.trim().length > 0) {
-    //         reReplySubmitBtn3.classList.add("enabled");
-    //     } else {
-    //         reReplySubmitBtn3.classList.remove("enabled");
-    //     }
-    // });
 
 });
 
