@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     videoCards.forEach(card => {
        card.addEventListener("click", () => {
          const videoId = card.dataset.videoId;
-         window.location.href = `video.html?videoId=${videoId}`;
+         window.location.href = `https://ksop5314.github.io/kdt12_first_project/first_project/pages/video.html?videoId=${videoId}`;
        });
     });
 
-    fetch("/first_project/pages/header.html")
+    fetch("https://ksop5314.github.io/kdt12_first_project/first_project/pages/header.html")
        .then(res => res.text())
        .then(data => {
           document.getElementById("header").innerHTML = data;
