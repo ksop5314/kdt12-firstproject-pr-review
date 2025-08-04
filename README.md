@@ -14,11 +14,6 @@
 
 ---
 
-## 🧰 기술 스택
-
-- HTML5, CSS3
-- JavaScript (Vanilla JS)
-
 ## 📁 디렉토리 구조
 
 first_project/<br>
@@ -37,6 +32,11 @@ first_project/<br>
 │ └── header.html # 공통 header<br>
 ├── index.html # 메인 페이지 (영상 리스트)<br>
 ├── video.html # 영상 상세 페이지<br>
+
+## 🧰 기술 스택
+
+- HTML5, CSS3
+- JavaScript (Vanilla JS)
 
 <div align=center><h1>📚 STACKS</h1></div>
 
