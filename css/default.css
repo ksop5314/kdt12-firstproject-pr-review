@@ -192,6 +192,30 @@ ul, li, a{
     background-color: #5D5D5D;
 }
 
+.make-button {
+    position: absolute;
+    background-color: #333333;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 12px 8px 12px;
+    right: 140px;
+    top: 18px;
+}
+
+.make-button:hover, .make-button:hover a, .make-button:hover a span {
+    background-color: #5D5D5D;
+}
+
+.make-button a {
+    background-color: #333333;
+    text-decoration: none;
+    color: white;
+}
+
+.make-button a span{
+    background-color: #333333;
+}
+
 .alert-button {
     position: absolute;
     background-color: #121212;
