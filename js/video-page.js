@@ -11,8 +11,8 @@ const videoData = {
         description: "달수네 멤버십에 가입하여 다양한 혜택을 누려보세요.",
         membership: " / @dalsoolive",
         contact: "광고문의 business@dalsoolive.com",
-        channelLogo: "/first_project/img/youtube-logo-1.png",
-        membershipLogo: "/first_project/img/yt_favicon_ringo2.png",
+        channelLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/youtube-logo-1.png",
+        membershipLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/yt_favicon_ringo2.png",
         subTitle1: "언급된 인물",
         mentionedPeople: [
             { name: "김민덕", img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNBTpgl7G5uj4pRatqGo_t88XUFBkyKb59msFX1uKhXsKx3cMFLnI1Aa1cYrtm" },
@@ -53,13 +53,13 @@ const videoData = {
             "👇’뜬뜬’ 소식 보러가기\n",
         membership: " / ddeun._.ddeun",
         contact: "- 본 콘텐츠와 무관한 내용의 댓글과 출연자에 대한 무분별한 욕설, 비난 및 조롱 등 악의적인 댓글은 무통보 삭제될 수 있습니다.",
-        channelLogo: "/first_project/img/youtube-logo-2.jpg",
-        membershipLogo: "/first_project/img/instagram_logo.png",
+        channelLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/youtube-logo-2.jpg",
+        membershipLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/instagram_logo.png",
         subTitle1: "팟캐스트 살펴보기",
         mentionedPeople: [
         ],
         subContents: [
-            { name: "", img: "/first_project/img/pod-cast.jpg" }
+            { name: "", img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/pod-cast.jpg" }
         ],
         subTitle2: "스크립트",
         stScriptText: "스크립트를 보면서 시청하세요.",
@@ -78,7 +78,7 @@ const videoData = {
             "쿠플의 모든 스포츠 콘텐츠를 무제한으로 만나보세요!",
         membership: "",
         contact: "- 스포츠 패스 가입하기",
-        channelLogo: "/first_project/img/youtube-logo-3.jpg",
+        channelLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/youtube-logo-3.jpg",
         membershipLogo: "",
         subTitle1: "언급된 인물",
         mentionedPeople: [
@@ -104,8 +104,8 @@ const videoData = {
         description: "♡인스타 놀러오세요♡",
         membership: " / sungjunya0",
         contact: "",
-        channelLogo: "/first_project/img/youtube-logo-4.jpg",
-        membershipLogo: "/first_project/img/instagram_logo.png",
+        channelLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/youtube-logo-4.jpg",
+        membershipLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/instagram_logo.png",
         subTitle1: "이 콘텐츠가 제작된 방식",
         mentionedPeople: [
         ],
@@ -128,8 +128,8 @@ const videoData = {
             "채널 멤버쉽 가입:",
         membership: " / @keesun.b",
         contact: "- 본 콘텐츠와 무관한 내용의 댓글과 출연자에 대한 무분별한 욕설, 비난 및 조롱 등 악의적인 댓글은 무통보 삭제될 수 있습니다.",
-        channelLogo: "/first_project/img/youtube-logo-5.jpg",
-        membershipLogo: "/first_project/img/yt_favicon_ringo2.png",
+        channelLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/youtube-logo-5.jpg",
+        membershipLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/yt_favicon_ringo2.png",
         subTitle1: "",
         mentionedPeople: [
         ],
@@ -154,7 +154,7 @@ const videoData = {
             "📌 모든 영상은 직접 커스터마이징된 창작물입니다.",
         membership: "",
         contact: "- 본 콘텐츠와 무관한 내용의 댓글과 출연자에 대한 무분별한 욕설, 비난 및 조롱 등 악의적인 댓글은 무통보 삭제될 수 있습니다.",
-        channelLogo: "/first_project/img/youtube-logo-6.jpg",
+        channelLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/youtube-logo-6.jpg",
         membershipLogo: "",
         subTitle1: "이 콘텐츠가 제작된 방식",
         mentionedPeople: [
@@ -180,8 +180,8 @@ const videoData = {
             "▶ 김창옥tv 정기강연 콘서트 예매: https://bit.ly/3K4nCQW ",
         membership: " / kcotv",
         contact: "- 본 콘텐츠와 무관한 내용의 댓글과 출연자에 대한 무분별한 욕설, 비난 및 조롱 등 악의적인 댓글은 무통보 삭제될 수 있습니다.",
-        channelLogo: "/first_project/img/youtube-logo-7.jpg",
-        membershipLogo: "/first_project/img/yt_favicon_ringo2.png",
+        channelLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/youtube-logo-7.jpg",
+        membershipLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/yt_favicon_ringo2.png",
         subTitle1: "언급된 인물",
         mentionedPeople: [
             { name: "김창옥", img: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiIhSa4ZtvrHH8WBz-2UUQUdH0YRRG8q5pC4OYZNgmO4Tuit2Tezt7Gh4L3nlN" }
@@ -264,7 +264,7 @@ const videoData = {
             "Copyright Ⓒ SBS. All rights reserved. 무단 전재, 재배포 및 AI학습 이용 금지",
         membership: "",
         contact: "",
-        channelLogo: "/first_project/img/youtube-logo-8.jpg",
+        channelLogo: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/youtube-logo-8.jpg",
         membershipLogo: "",
         subTitle1: "",
         mentionedPeople: [
@@ -309,7 +309,7 @@ const replyData = {
             {
                 nickName: "replyTestUser1",
                 imgName: "testUser1",
-                img: "/first_project/img/test-user-3.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-3.jpg",
                 replyId: "eachReplyText1",
                 reply: "모든걸 기억하는 사람 1명과 웬만하면 기억 못하는 사람 2명이 우연히 한 테이블에 앉은 덕분에\n" +
                     "핑계고 출연까지한게 ㄹㅈㄷ다ㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
@@ -320,7 +320,7 @@ const replyData = {
             {
                 nickName: "replyTestUser2",
                 imgName: "testUser2",
-                img: "/first_project/img/test-user-4.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-4.jpg",
                 replyId: "eachReplyText2",
                 reply: "와 진짜 토크 미쳤다 ㅋㅋㅋ여기에 효연까지 있었으면 키 화병났을듯 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
                 replyLikeCnt: 60,
@@ -335,7 +335,7 @@ const replyData = {
             {
                 nickName: "replyTestUser1",
                 imgName: "testUser1",
-                img: "/first_project/img/test-user-5.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-5.jpg",
                 replyId: "eachReplyText1",
                 reply: "심판 칭찬할 날이 오네.. 진짜..\n" +
                     "1:28 경기 초반 골찬스 빠질 때 반칙은 카드 줘서 경고 확실히 함\n" +
@@ -357,7 +357,7 @@ const replyData = {
             {
                 nickName: "replyTestUser2",
                 imgName: "testUser2",
-                img: "/first_project/img/test-user-6.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-6.jpg",
                 replyId: "eachReplyText2",
                 reply: "평일 경기인데 관중 진짜 많네\n" +
                     "1층 꽉찬 모습 보기 좋다\n" +
@@ -375,7 +375,7 @@ const replyData = {
             {
                 nickName: "replyTestUser1",
                 imgName: "testUser1",
-                img: "/first_project/img/test-user-7.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-7.jpg",
                 replyId: "eachReplyText1",
                 reply: "성준아 어디야?? 왜 안 와??",
                 replyLikeCnt: 283,
@@ -385,7 +385,7 @@ const replyData = {
             {
                 nickName: "replyTestUser2",
                 imgName: "testUser2",
-                img: "/first_project/img/test-user-8.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-8.jpg",
                 replyId: "eachReplyText2",
                 reply: "오랜만에 만났다면 학교 다닐 때 추억이나 재미있었던 일 이런 거 얘기해가면서 낄낄대면서 잼나게 놀기나 하지\n" +
                     "얼마 버는게 뭐가 중요하다고 ㅉㅉ 저런 동창회는 안가는게 낫겠네 ㅋㅋ 이미 성준이형이 분위기 흐름을 파악하고\n" +
@@ -402,7 +402,7 @@ const replyData = {
             {
                 nickName: "replyTestUser1",
                 imgName: "testUser1",
-                img: "/first_project/img/test-user-9.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-9.jpg",
                 replyId: "eachReplyText1",
                 reply: "다시 공부하러 가야하는 영상",
                 replyLikeCnt: 283,
@@ -412,7 +412,7 @@ const replyData = {
             {
                 nickName: "replyTestUser2",
                 imgName: "testUser2",
-                img: "/first_project/img/test-user-10.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-10.jpg",
                 replyId: "eachReplyText2",
                 reply: "이건 정말 훌륭합니다. 스프링 뿐만아니라 의존성 주입이 왜 필요한지 가장 쉽게 이해할 수 있는 영상 같습니다.",
                 replyLikeCnt: 60,
@@ -427,7 +427,7 @@ const replyData = {
             {
                 nickName: "replyTestUser1",
                 imgName: "testUser1",
-                img: "/first_project/img/test-user-11.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-11.jpg",
                 replyId: "eachReplyText1",
                 reply: "0:59 가래떡 괴롭히는거 졸귀넼ㅋㅋㅋㅋㅋㅋㅋㅋ",
                 replyLikeCnt: 283,
@@ -437,7 +437,7 @@ const replyData = {
             {
                 nickName: "replyTestUser2",
                 imgName: "testUser2",
-                img: "/first_project/img/test-user-12.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-12.jpg",
                 replyId: "eachReplyText2",
                 reply: "아니야 참길 잘 했어요. 햄찌님. 조용씨에겐 언젠간 더 큰 거 터뜨릴 날이 올 거예요~ 조용씨가 그 동안 말로 매를\n" +
                     "벌어둘 거거든요. ㅎㅎㅎ 회식 때는 고기 많이 먹고 잊어버리는 게 최고!",
@@ -453,7 +453,7 @@ const replyData = {
             {
                 nickName: "replyTestUser1",
                 imgName: "testUser1",
-                img: "/first_project/img/test-user-13.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-13.jpg",
                 replyId: "eachReplyText1",
                 reply: "디스크로 허리 벨트에 지팡이까지 들고 이 자리에 오신 것이 신청자들과 여기서 시청하는 우리들에게 얼마나 큰\n" +
                     "위로와 감동이 되는지요~\n" +
@@ -466,7 +466,7 @@ const replyData = {
             {
                 nickName: "replyTestUser2",
                 imgName: "testUser2",
-                img: "/first_project/img/test-user-14.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-14.jpg",
                 replyId: "eachReplyText2",
                 reply: "너무 열심히 산\n" +
                     "댓가네요.\n" +
@@ -485,7 +485,7 @@ const replyData = {
             {
                 nickName: "replyTestUser1",
                 imgName: "testUser1",
-                img: "/first_project/img/test-user-15.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-15.jpg",
                 replyId: "eachReplyText1",
                 reply: "여객기가 피했다고?대박",
                 replyLikeCnt: 283,
@@ -495,7 +495,7 @@ const replyData = {
             {
                 nickName: "replyTestUser2",
                 imgName: "testUser2",
-                img: "/first_project/img/test-user-16.jpg",
+                img: "https://ksop5314.github.io/kdt12-firstproject-pr-review/img/test-user-16.jpg",
                 replyId: "eachReplyText2",
                 reply: "마국은 자동차 면허증을 갱신해서 공군 조종사 면허를 주나? 어이없네 요즘 미국이 왜 이러나?",
                 replyLikeCnt: 60,
