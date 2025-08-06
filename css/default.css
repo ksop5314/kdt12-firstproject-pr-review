@@ -28,7 +28,7 @@ ul, li, a{
     align-items: center;
     justify-content: center;
     /*display: flex;*/
-    z-index: 999;
+    z-index: 999; /* 화면에 보여질 때 가장 위에 있게 */
     background-color: #121212;
     transition: all 0.3s ease;
     top: 0;
@@ -269,7 +269,7 @@ ul, li, a{
     width: 300px;
     right: 15px;
     top: 60px;
-    z-index: 999;
+    z-index: 999;  /* 화면에 보여질 때 가장 위에 있게 */
     overflow: hidden;
     border-radius: 8px;
 }
@@ -421,6 +421,63 @@ ul, li, a{
 }
 
 /* 영상 목록 범위 */
+.video-card {
+    cursor: pointer;
+}
+
+.video-thumbnail {
+    position: relative;
+}
+
+.card-img-top {
+    border-radius: 8px;
+}
+
+.video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 997;
+    opacity: 0;
+}
+
+/*.video-card:hover {*/
+/*    transform: scale(1.1);*/
+/*    background: rgb(45, 45, 45);*/
+/*    transition: 0.3s;*/
+/*    transition-delay: 0.3s;*/
+/*}*/
+
+/* 썸네일에 마우스 올리면 썸네일을 숨김 */
+.video-card:hover .card-img-top {
+    opacity: 0;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+/* 썸네일에 마우스 올리면 iframe 을 보이게함 */
+.video-card:hover .video-iframe {
+    opacity: 1;
+    transform: scale(1);
+    background: rgb(45, 45, 45);
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+/* iframe 클릭 방지 해당 영상 상세페이지로 이동하기 위한 a 태그 ( iframe 위에 덮어쓰기 ) */
+.video-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: transparent;
+    cursor: pointer;
+}
+
 .row > div {
     margin-bottom: 15px;
 }
@@ -475,10 +532,6 @@ ul, li, a{
 
 .card .video-info-line .card-text, .video-info-line p i {
     color: #5D5D5D;
-}
-
-.video-card {
-    cursor: pointer;
 }
 
 @media (max-width: 1480px) {

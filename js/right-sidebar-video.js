@@ -59,9 +59,9 @@ const videos = [
 ];
 
 const container = document.getElementById("rightVideoSidebar");
-videos.forEach(video => {
+videos.forEach((video, index) => {
    const html = `
-        <div class="right-video-item">
+        <div class="right-video-item" id="recommendVideo${index+1}" data-video-id="${index + 1}">
             <img src="${video.thumbnail}" class="thumbnail" alt="썸네일">
             <div class="right-video-info">
                 <p class="right-video-title">${video.title}</p>
@@ -71,4 +71,9 @@ videos.forEach(video => {
         </div>`;
 
    container.insertAdjacentHTML("beforeend", html);
+
+   const recommendVideo = document.getElementById(`recommendVideo${index+1}`);
+   recommendVideo.addEventListener("click", () => {
+       window.location.href = `/kdt12_first_project/first_project/pages/video.html?videoId=${index+1}`;
+   });
 });
