@@ -74,6 +74,6 @@ videos.forEach((video, index) => {
 
    const recommendVideo = document.getElementById(`recommendVideo${index+1}`);
    recommendVideo.addEventListener("click", () => {
-       window.location.href = `/kdt12_first_project/first_project/pages/video.html?videoId=${index+1}`;
+       window.location.href = `https://ksop5314.github.io/kdt12-firstproject-pr-review/pages/video.html?videoId=${index+1}`;
    });
 });
